@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="UOOAM is a considered family clothing collection of sarees, suits, shirts and accessories." />
+    <meta name="theme-color" content="#201814" />
+    <link rel="canonical" href="https://uooam.com/" />
+    <meta property="og:title" content="UOOAM — Modern family clothing" />
+    <meta property="og:description" content="Discover our considered collection. Enquire directly on WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://uooam.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>UOOAM — Modern family clothing</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"ClothingStore","name":"UOOAM","url":"https://uooam.com/","description":"A family clothing catalogue for sarees, suits, shirts and accessories.","sameAs":["https://www.instagram.com/uooambyurvashiranani?igsh=eGt6aWpmaWcybDBw"]}
+    </script>
+  </head>
+  <body>
+    <div class="announcement">New season pieces, now available to enquire</div>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="UOOAM home">UOOAM</a>
+      <nav aria-label="Main navigation"><a href="#collection">Collection</a><a href="#about">Our story</a><a href="#contact">Contact</a></nav>
+      <a class="header-chat" data-whatsapp-general href="#contact">WhatsApp <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy"><p class="eyebrow">UOOAM / EST. FOR EVERYDAY OCCASIONS</p><h1 id="hero-title">Dress the moments<br /><em>that matter.</em></h1><p class="hero-text">A thoughtful collection for the whole family — selected with a love for texture, colour, and easy elegance.</p><a class="button button-dark" href="#collection">Explore the collection <span>↓</span></a></div>
+        <div class="hero-art" role="img" aria-label="A folded textile in warm terracotta and rose tones"><div class="hero-sun"></div><div class="fabric fabric-one"></div><div class="fabric fabric-two"></div><p>UOOAM<br /><i>2026 Collection</i></p></div>
+      </section>
+      <section class="intro" id="about"><p class="eyebrow">A WARDROBE WITH WARMTH</p><p>From everyday shirts to occasion-ready sarees, UOOAM brings together pieces that feel personal, polished and made to be lived in.</p></section>
+      <section class="catalogue" id="collection" aria-labelledby="catalogue-title">
+        <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="catalogue-title">Find your next favourite.</h2></div><p id="product-count" class="product-count" aria-live="polite"></p></div>
+        <div class="catalogue-controls">
+          <label class="search"><span class="sr-only">Search products</span><input id="search" type="search" placeholder="Search the collection" /><span aria-hidden="true">⌕</span></label>
+          <div class="filter-wrap"><label for="category" class="sr-only">Filter by category</label><select id="category"><option value="all">All categories</option><option>Sarees</option><option>Suits</option><option>Women's Shirts</option><option>Men's Shirts</option><option>Women's Accessories</option></select></div>
+          <div class="filter-wrap"><label for="sort" class="sr-only">Sort products</label><select id="sort"><option value="newest">Newest first</option><option value="alphabetical">Alphabetical</option></select></div>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>Nothing matched that search. Try another word or category.</p>
+      </section>
+      <section class="contact-panel" id="contact"><div><p class="eyebrow">LET'S FIND YOUR PIECE</p><h2>Questions about fit,<br /><em>colour or availability?</em></h2></div><div><p>We’ll be happy to help you choose. Send us a message and our team will get back to you.</p><a class="button button-light" data-whatsapp-general href="#">Chat on WhatsApp <span>↗</span></a><a class="instagram-link" href="https://www.instagram.com/uooambyurvashiranani?igsh=eGt6aWpmaWcybDBw" target="_blank" rel="noreferrer">Follow @uooam on Instagram ↗</a></div></section>
+    </main>
+    <footer><a class="wordmark" href="#top">UOOAM</a><p>Modern family clothing, chosen with care.</p><p>© <span id="year"></span> UOOAM</p></footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>
