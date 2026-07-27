@@ -1,18 +1,48 @@
 # UOOAM catalogue
 
-A fast, no-checkout product catalogue built as plain HTML, CSS and JavaScript. This keeps the site easy to maintain and free to host.
+A fast, no-checkout product catalogue built as plain HTML, CSS and JavaScript. Free to host on Cloudflare Pages.
 
-## Before publishing (important)
+## Managing products (no code editing)
 
-1. Open `app.js` and `product.js` in a code editor.
-2. Replace `919999999999` with the shop WhatsApp number in international format, with no `+`, spaces, or dashes. Example: an Indian number `98765 43210` becomes `919876543210`.
-3. Update the Instagram link in `index.html` if the account handle differs.
+All product information lives in **`data/products.json`**. Each `{ ... }` block is one product. Copy an existing block, update the text, give it a new unique `code`, and save. The product appears automatically in search, filters, category pages and its detail page.
 
-## Adding or changing a product
+To mark a product as a "New arrival" on the homepage, add `"isNew": true` to its block.
 
-Open only `data/products.json`. Each `{ ... }` block is one product. Copy an existing block, update its text, give it a new unique `code`, and save. The product appears automatically in search, filters and its detail page.
+To use real photos instead of placeholder artwork, add a `"photos"` array of image paths, for example:
 
-The current artwork is intentional, polished placeholder artwork. When you have photos, replace the placeholder gallery system with real image paths in this same JSON file; this is the only content file you will need to update.
+```json
+"photos": ["images/sarees/UOO-SAR-001.jpg", "images/sarees/UOO-SAR-001-A.jpg"]
+```
+
+When `photos` is present, the website shows your real images. When it is absent, it falls back to the elegant placeholder artwork. This makes it easy to add products before photos are ready.
+
+## Managing categories (no code editing)
+
+All category information lives in **`data/categories.json`**. Each entry controls the category name, tagline, cover image and display order on the homepage.
+
+To change a category's homepage image, update its `"coverImage"` path. To reorder categories, change the `"order"` number.
+
+To add a new category, add a new block to `categories.json` and start adding products with that category name in `products.json`. No other files need to change.
+
+## File overview
+
+| File | Purpose |
+|------|---------|
+| `data/products.json` | All product data (the only file for adding products) |
+| `data/categories.json` | Category names, taglines, cover images, order |
+| `index.html` | Homepage (hero, category grid, new arrivals, contact) |
+| `category.html` + `category.js` | Category browsing page |
+| `product.html` + `product.js` | Individual product detail page |
+| `app.js` | Homepage logic (renders categories and new arrivals) |
+| `styles.css` | All styling |
+| `robots.txt` | Search engine rules |
+| `sitemap.xml` | Sitemap for search engines |
+
+## Before publishing
+
+1. Open `app.js`, `product.js`, and `category.js`.
+2. Replace the WhatsApp number `918619512140` with your shop number if different (international format, no `+`, spaces or dashes).
+3. Update the Instagram link in `index.html` if the handle differs.
 
 ## Preview on your computer
 
@@ -22,15 +52,13 @@ Install [Node.js LTS](https://nodejs.org/) once, then open PowerShell in this pr
 npx serve .
 ```
 
-Open the local address shown in PowerShell (usually `http://localhost:3000`). Press `Ctrl + C` in PowerShell to stop it.
+Open the local address shown (usually `http://localhost:3000`). Press `Ctrl + C` to stop.
 
 ## Publish free with Cloudflare Pages
 
 1. Create a free account at [Cloudflare](https://dash.cloudflare.com/sign-up).
-2. Create a new GitHub repository, upload this folder, then in Cloudflare choose **Workers & Pages** → **Create application** → **Pages** → **Import an existing Git repository**.
-3. Select your repository. For this plain website, leave **Build command** empty and set **Build output directory** to `/`.
-4. Click **Save and Deploy**. Cloudflare gives you a free temporary website address.
-5. In Cloudflare, open the Pages project → **Custom domains** → **Set up a custom domain**, type `uooam.com`, and follow the displayed DNS instructions. If Cloudflare asks to manage your DNS, update the nameservers in Hostinger: **Domains** → **uooam.com** → **DNS / Nameservers**.
-6. Wait for the domain to become active. Cloudflare turns on HTTPS automatically. Visit `https://uooam.com` on your phone and test a product’s WhatsApp button.
-
-Cloudflare Pages is a strong free choice because it is fast worldwide, includes HTTPS, and needs no server maintenance for this kind of catalogue.
+2. Push this folder to a GitHub repository, then in Cloudflare choose **Workers & Pages** → **Create application** → **Pages** → **Import an existing Git repository**.
+3. Select your repository. Leave **Build command** empty and set **Build output directory** to `/`.
+4. Click **Save and Deploy**. Cloudflare gives you a free temporary address.
+5. To connect `uooam.com`: open the Pages project → **Custom domains** → **Set up a custom domain**, type `uooam.com`, and follow the DNS instructions. If Cloudflare asks to manage DNS, update the nameservers in Hostinger under **Domains** → **uooam.com** → **DNS / Nameservers**.
+6. Wait for the domain to become active. Cloudflare enables HTTPS automatically.
