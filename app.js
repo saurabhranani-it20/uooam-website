@@ -23,10 +23,37 @@ function card(product, index) {
   return `<article class="product-card" style="animation-delay:${Math.min(index * 35, 350)}ms"><a class="product-link" href="${url}" aria-label="View ${product.name}">${img}<div class="product-meta"><h3>${product.name}</h3><p>${product.code} · ${product.color}</p></div></a></article>`;
 }
 
+function resolveCategoryCoverImage(cat) {
+  const name = (cat.name || "").trim().toLowerCase();
+  const imageName = {
+    sarees: "sarees",
+    suits: "suits",
+    lehengas: "lehengas",
+    dresses: "dresses",
+    "women's shirts": "womens-shirts",
+    "women’s shirts": "womens-shirts",
+    "men's shirts": "mens-shirts",
+    "men’s shirts": "mens-shirts",
+    accessories: "accessories",
+  }[name] || slugify(cat.name);
+
+  const candidates = [];
+  if (cat.coverImage) candidates.push(cat.coverImage);
+
+  ["images/categories"].forEach((folder) => {
+    [".webp", ".png", ".jpg", ".jpeg"].forEach((extension) => {
+      candidates.push(`${folder}/${imageName}${extension}`);
+    });
+  });
+
+  return candidates.find(Boolean) || "";
+}
+
 function categoryCard(cat, count, index) {
   const url = `category.html?category=${slugify(cat.name)}`;
-  const cover = cat.coverImage
-    ? `<div class="category-photo"><img src="${cat.coverImage}" alt="${cat.name} category" loading="lazy" /></div>`
+  const coverImage = resolveCategoryCoverImage(cat);
+  const cover = coverImage
+    ? `<div class="category-photo"><img src="${coverImage}" alt="${cat.name} category" loading="lazy" /></div>`
     : `<div class="category-art" style="--tone1:${cat.tone || "#a5543e"};--tone2:${cat.tone2 || "#e7ddd0"}"><span>${cat.name}</span></div>`;
   return `<a class="category-card" href="${url}" style="animation-delay:${Math.min(index * 45, 300)}ms" aria-label="Browse ${cat.name}">${cover}<div class="category-meta"><h3>${cat.name}</h3><p>${count} piece${count === 1 ? "" : "s"}</p><span class="category-tagline">${cat.tagline || ""}</span></div></a>`;
 }

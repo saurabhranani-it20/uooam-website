@@ -2,43 +2,43 @@
   {
     "name": "Sarees",
     "tagline": "Drapes for every occasion",
-    "coverImage": "images/catagories/sarees.webp",
+    "coverImage": "images/categories/sarees.webp",
     "order": 1
   },
   {
     "name": "Suits",
     "tagline": "Elegant sets, effortless grace",
-    "coverImage": "images/categories/suits.jpg",
+    "coverImage": "images/categories/suits.webp",
     "order": 2
   },
   {
     "name": "Lehengas",
     "tagline": "Celebration-ready silhouettes",
-    "coverImage": "images/categories/lehengas.jpg",
+    "coverImage": "images/categories/lehengas.webp",
     "order": 3
   },
   {
     "name": "Dresses",
     "tagline": "Modern pieces, considered cuts",
-    "coverImage": "images/categories/dresses.jpg",
+    "coverImage": "images/categories/dresses.webp",
     "order": 4
   },
   {
     "name": "Women's Shirts",
     "tagline": "Tailored staples with polish",
-    "coverImage": "images/categories/womens-shirts.jpg",
+    "coverImage": "images/categories/womens-shirts.png",
     "order": 5
   },
   {
     "name": "Men's Shirts",
     "tagline": "Crisp everyday essentials",
-    "coverImage": "images/categories/mens-shirts.jpg",
+    "coverImage": "images/categories/mens-shirts.webp",
     "order": 6
   },
   {
     "name": "Accessories",
     "tagline": "Finishing touches that matter",
-    "coverImage": "images/categories/accessories.jpg",
+    "coverImage": "images/categories/accessories.webp",
     "order": 7
   }
 ]

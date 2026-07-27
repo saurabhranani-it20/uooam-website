@@ -7,6 +7,34 @@ const categoryName = new URLSearchParams(location.search).get("category") || "";
 function productUrl(product) {
   return `${location.origin}${location.pathname.replace("category.html", "")}product.html?product=${slugify(product.name)}`;
 }
+
+function getCategoryCoverImage(categoryName) {
+  const name = (categoryName || "").trim().toLowerCase();
+  const imageName = {
+    sarees: "sarees",
+    suits: "suits",
+    lehengas: "lehengas",
+    dresses: "dresses",
+    "women's shirts": "womens-shirts",
+    "women’s shirts": "womens-shirts",
+    "men's shirts": "mens-shirts",
+    "men’s shirts": "mens-shirts",
+    accessories: "accessories",
+  }[name] || slugify(categoryName);
+
+  const candidates = [
+    `images/categories/${imageName}.webp`,
+    `images/categories/${imageName}.png`,
+    `images/categories/${imageName}.jpg`,
+    `images/categories/${imageName}.jpeg`,
+    `images/categories/${imageName}.png`,
+    `images/categories/${imageName}.jpg`,
+    `images/categories/${imageName}.jpeg`,
+  ];
+
+  return candidates.find((path) => path) || "";
+}
+
 function whatsappUrl(product) {
   const message = product
     ? `Hello,\n\nI am interested in this product.\n\nProduct: ${product.name}\nProduct Link: ${productUrl(product)}\n\nCould you please share the price and availability?`
@@ -52,10 +80,17 @@ async function start() {
   const displayCategory = categoryProducts[0].category;
   document.title = `${displayCategory} | UOOAM`;
   document.querySelector("meta[name=description]").content = `Explore our ${displayCategory} collection at UOOAM. Enquire directly on WhatsApp.`;
+  const coverImage = getCategoryCoverImage(displayCategory);
+  const categoryHero = coverImage
+    ? `<div class="category-hero-photo"><img src="${coverImage}" alt="${displayCategory} collection" loading="eager" /></div>`
+    : "";
   $("#category-view").innerHTML = `
-    <div class="category-header">
-      <p class="eyebrow">THE COLLECTION</p>
-      <h1>${displayCategory}</h1>
+    <div class="category-hero">
+      ${categoryHero}
+      <div class="category-header">
+        <p class="eyebrow">THE COLLECTION</p>
+        <h1>${displayCategory}</h1>
+      </div>
     </div>
     <div class="catalogue-controls">
       <label class="search"><span class="sr-only">Search</span><input id="cat-search" type="search" placeholder="Search ${displayCategory.toLowerCase()}" /><span aria-hidden="true">⌕</span></label>
