@@ -20,7 +20,8 @@
     "images": ["Front view", "Close-up detail", "Pallu detail"],
     "tones": ["#e7c64b", "#f9f0c7"],
     "isNew": true,
-    "photos": ["images/sarees/UOO-SAR-001.webp", "images/sarees/UOO-SAR-001-A.webp"]
+    "photos": ["images/sarees/UOO-SAR-001.webp", "images/sarees/UOO-SAR-001-A.webp"],
+    "price": 3995
   },
   {
     "Product Code": "UOO-SAR-002",
@@ -43,6 +44,7 @@
     "images": ["Front view", "Border detail", "Pallu detail"],
     "tones": ["#b23a3a", "#f3c4c4"],
     "isNew": true,
-    "photos": ["images/sarees/UOO-SAR-002.webp"]
+    "photos": ["images/sarees/UOO-SAR-002.webp"],
+    "price": 4995
   }
 ]
