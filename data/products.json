@@ -1,50 +1,42 @@
 [
   {
-    "Product Code": "UOO-SAR-001",
-    "Product Name": "Yellow Floral Saree",
-    "Category": "Sarees",
-    "Fabric": "Organza",
-    "Colour": "Yellow",
-    "Sizes": "One size",
-    "Availability": "Available",
-    "Description": "Yellow Floral Saree",
+    "code": "UOO-SAR-001",
     "name": "Yellow Floral Saree",
     "category": "Sarees",
-    "description": "Yellow Floral Saree",
     "fabric": "Organza",
     "color": "Yellow",
     "sizes": "One size",
     "availability": "Available",
-    "code": "UOO-SAR-001",
+    "description": "Yellow Floral Saree",
     "imageLabel": "Yellow Floral Saree",
-    "images": ["Front view", "Close-up detail", "Pallu detail"],
-    "tones": ["#e7c64b", "#f9f0c7"],
-    "isNew": true,
-    "photos": ["images/sarees/UOO-SAR-001.webp", "images/sarees/UOO-SAR-001-A.webp"],
-    "price": 3995
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": []
   },
   {
-    "Product Code": "UOO-SAR-002",
-    "Product Name": "Red Floral Border Saree",
-    "Category": "Sarees",
-    "Fabric": "Silk",
-    "Colour": "Red",
-    "Sizes": "One size",
-    "Availability": "Available",
-    "Description": "Red Floral Border Saree",
+    "code": "UOO-SAR-002",
     "name": "Red Floral Border Saree",
     "category": "Sarees",
-    "description": "Red Floral Border Saree",
     "fabric": "Silk",
     "color": "Red",
     "sizes": "One size",
     "availability": "Available",
-    "code": "UOO-SAR-002",
+    "description": "Red Floral Border Saree",
     "imageLabel": "Red Floral Border Saree",
-    "images": ["Front view", "Border detail", "Pallu detail"],
-    "tones": ["#b23a3a", "#f3c4c4"],
-    "isNew": true,
-    "photos": ["images/sarees/UOO-SAR-002.webp"],
-    "price": 4995
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": []
   }
 ]
