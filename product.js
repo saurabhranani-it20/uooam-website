@@ -1,7 +1,7 @@
 const WHATSAPP_NUMBER = "918619512140";
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const query = new URLSearchParams(location.search).get("product");
-const productUrl = (p) => `${location.origin}${location.pathname.replace("product.html", "")}product.html?product=${slugify(p.name)}`;
+const productUrl = (p) => new URL(`product.html?product=${slugify(p.name)}`, location.href).href;
 const messageUrl = (p) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hello,\n\nI am interested in this product.\n\nProduct: ${p.name}\nProduct Link: ${productUrl(p)}\n\nCould you please share the price and availability?`)}`;
 
 fetch(`data/products.json?updated=${Date.now()}`, { cache: "no-store" })

@@ -7,7 +7,7 @@ const categoryName = new URLSearchParams(location.search).get("category") || "";
 const collectionName = new URLSearchParams(location.search).get("collection") || "";
 
 function productUrl(product) {
-  return `${location.origin}${location.pathname.replace("category.html", "")}product.html?product=${slugify(product.name)}`;
+  return new URL(`product.html?product=${slugify(product.name)}`, location.href).href;
 }
 
 function getCategoryCoverImage(categoryName) {

@@ -6,7 +6,7 @@ const $$ = (selector) => document.querySelectorAll(selector);
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 function productUrl(product) {
-  return `${location.origin}${location.pathname.replace("index.html", "")}product.html?product=${slugify(product.name)}`;
+  return new URL(`product.html?product=${slugify(product.name)}`, location.href).href;
 }
 function whatsappUrl(product) {
   const message = product
