@@ -3,6 +3,7 @@ let products = [];
 let categories = [];
 const $ = (selector) => document.querySelector(selector);
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const categorySlug = (text) => String(text).toLowerCase().replace(/[’']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const categoryName = new URLSearchParams(location.search).get("category") || "";
 const collectionName = new URLSearchParams(location.search).get("collection") || "";
 
@@ -71,7 +72,7 @@ async function start() {
   products = await productsResponse.json();
   categories = await categoriesResponse.json();
   const isNewArrivals = collectionName === "new-arrivals";
-  const categoryProducts = isNewArrivals ? products.filter((p) => p.isNew) : products.filter((p) => slugify(p.category) === slugify(categoryName));
+  const categoryProducts = isNewArrivals ? products.filter((p) => p.isNew) : products.filter((p) => categorySlug(p.category) === categorySlug(categoryName));
   if (categoryProducts.length === 0) {
     location.href = "index.html#collection";
     return;
@@ -80,7 +81,7 @@ async function start() {
   const displayCategory = isNewArrivals ? "New arrivals" : categoryProducts[0].category;
   document.title = `${displayCategory} | UOOAM`;
   document.querySelector("meta[name=description]").content = `Explore our ${displayCategory} collection at UOOAM. Enquire directly on WhatsApp.`;
-  const category = categories.find((item) => slugify(item.name) === slugify(displayCategory));
+  const category = categories.find((item) => categorySlug(item.name) === categorySlug(displayCategory));
   const coverImage = isNewArrivals ? "" : category?.coverImage || getCategoryCoverImage(displayCategory);
   const categoryHero = coverImage
     ? `<div class="category-hero-photo"><img src="${coverImage}" alt="${displayCategory} collection" loading="eager" /></div>`

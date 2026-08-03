@@ -4,6 +4,7 @@ let categories = [];
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => document.querySelectorAll(selector);
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const categorySlug = (text) => String(text).toLowerCase().replace(/[’']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 function productUrl(product) {
   return new URL(`product.html?product=${slugify(product.name)}`, location.href).href;
@@ -51,7 +52,7 @@ function resolveCategoryCoverImage(cat) {
 }
 
 function categoryCard(cat, count, index) {
-  const url = `category.html?category=${slugify(cat.name)}`;
+  const url = `category.html?category=${categorySlug(cat.name)}`;
   const coverImage = resolveCategoryCoverImage(cat);
   const cover = coverImage
     ? `<div class="category-photo"><img src="${coverImage}" alt="${cat.name} category" loading="lazy" /></div>`
