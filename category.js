@@ -58,7 +58,7 @@ function render() {
   const sort = $("#cat-sort").value;
   let shown = products.filter((p) => `${p.name} ${p.code} ${p.color} ${p.fabric}`.toLowerCase().includes(query));
   if (sort === "alphabetical") shown = [...shown].sort((a, b) => a.name.localeCompare(b.name));
-  if (sort === "newest") shown = [...shown].reverse();
+  if (sort === "collection") shown = [...shown].sort((a, b) => (a.sortOrder ?? Number.POSITIVE_INFINITY) - (b.sortOrder ?? Number.POSITIVE_INFINITY) || a.code.localeCompare(b.code));
   $("#cat-grid").innerHTML = shown.map(card).join("");
   $("#cat-count").textContent = `${shown.length} piece${shown.length === 1 ? "" : "s"}`;
   $("#cat-empty").hidden = shown.length !== 0;
@@ -96,7 +96,7 @@ async function start() {
     </div>
     <div class="catalogue-controls">
       <label class="search"><span class="sr-only">Search</span><input id="cat-search" type="search" placeholder="Search ${displayCategory.toLowerCase()}" /><span aria-hidden="true">⌕</span></label>
-      <div class="filter-wrap"><label for="cat-sort" class="sr-only">Sort</label><select id="cat-sort"><option value="newest">Newest first</option><option value="alphabetical">Alphabetical</option></select></div>
+      <div class="filter-wrap"><label for="cat-sort" class="sr-only">Sort</label><select id="cat-sort"><option value="collection">Collection order</option><option value="alphabetical">Alphabetical</option></select></div>
     </div>
     <p id="cat-count" class="product-count" aria-live="polite"></p>
     <div class="product-grid" id="cat-grid"></div>

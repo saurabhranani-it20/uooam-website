@@ -72,6 +72,20 @@ def value(row, *names):
     return ""
 
 
+def published(row):
+    """Blank Publish cells remain visible; explicit No/False cells are private."""
+    setting = value(row, "Publish", "Published", "Visible")
+    return not str(setting).strip() or truthy(setting)
+
+
+def numeric_value(raw):
+    try:
+        number = float(str(raw).strip())
+        return int(number) if number.is_integer() else number
+    except (TypeError, ValueError):
+        return None
+
+
 def category_name(raw):
     aliases = {"saree": "Sarees", "sarees": "Sarees", "lehenga": "Lehengas", "lehengas": "Lehengas", "suit": "Suits", "suits": "Suits", "dress": "Dresses", "dresses": "Dresses", "accessory": "Accessories", "accessories": "Accessories"}
     clean = str(raw).strip()
@@ -225,9 +239,13 @@ def main():
     images_by_category = {}
     products = []
     missing_photos = []
+    unpublished_products = 0
 
     shutil.rmtree(OUTPUT_IMAGES, ignore_errors=True)
     for tab_name, row in sheet_rows(sheets, required("GOOGLE_SHEET_ID")):
+        if not published(row):
+            unpublished_products += 1
+            continue
         code = str(value(row, "Product Code", "Code", "SKU")).strip()
         category = category_name(value(row, "Category") or tab_name)
         folder_id = category_folders.get(slug(category)) or category_folders.get(slug(tab_name))
@@ -264,11 +282,16 @@ def main():
         price = value(row, "Price", "MRP")
         if price:
             product["price"] = float(str(price).replace(",", "").replace("₹", ""))
+        sort_order = numeric_value(value(row, "Sort Order", "Sort", "Display Order"))
+        if sort_order is not None:
+            product["sortOrder"] = sort_order
         products.append(product)
-    products.sort(key=lambda product: (product["category"].lower(), product["code"].lower()))
+    products.sort(key=lambda product: (product["category"].lower(), product.get("sortOrder", float("inf")), product["code"].lower()))
     OUTPUT_JSON.write_text(json.dumps(products, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     sync_categories(drive, cover_folder_id, list(dict.fromkeys(product["category"] for product in products)))
     print(f"Synced {len(products)} products.")
+    if unpublished_products:
+        print(f"Skipped {unpublished_products} unpublished product(s).")
     if missing_photos:
         print("No matching Drive photo found for: " + ", ".join(missing_photos), file=sys.stderr)
 
