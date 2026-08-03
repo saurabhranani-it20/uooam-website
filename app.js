@@ -89,7 +89,9 @@ function renderNewArrivals() {
   const section = $("#new-arrivals");
   const grid = $("#new-arrivals-grid");
   if (!section || !grid) return;
-  const newArrivals = products.filter((p) => p.isNew).slice(0, 4);
+  const newArrivals = products
+    .filter((p) => p.isNew)
+    .sort((a, b) => (a.sortOrder ?? Number.POSITIVE_INFINITY) - (b.sortOrder ?? Number.POSITIVE_INFINITY) || a.code.localeCompare(b.code));
   if (newArrivals.length === 0) {
     section.hidden = true;
     return;

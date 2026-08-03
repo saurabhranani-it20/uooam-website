@@ -59,10 +59,8 @@ function card(product, index) {
 }
 
 function render() {
-  const query = $("#cat-search").value.trim().toLowerCase();
   const sort = $("#cat-sort").value;
-  let shown = products.filter((p) => `${p.name} ${p.code} ${p.color} ${p.fabric}`.toLowerCase().includes(query));
-  if (sort === "alphabetical") shown = [...shown].sort((a, b) => a.name.localeCompare(b.name));
+  let shown = [...products];
   if (sort === "collection") shown = [...shown].sort((a, b) => (a.sortOrder ?? Number.POSITIVE_INFINITY) - (b.sortOrder ?? Number.POSITIVE_INFINITY) || a.code.localeCompare(b.code));
   if (sort === "price-low") shown = [...shown].sort((a, b) => (Number(a.price) || Number.POSITIVE_INFINITY) - (Number(b.price) || Number.POSITIVE_INFINITY) || a.code.localeCompare(b.code));
   if (sort === "price-high") shown = [...shown].sort((a, b) => (Number(b.price) || Number.NEGATIVE_INFINITY) - (Number(a.price) || Number.NEGATIVE_INFINITY) || a.code.localeCompare(b.code));
@@ -104,14 +102,12 @@ async function start() {
       </div>
     </div>
     <div class="catalogue-controls">
-      <label class="search"><span class="sr-only">Search</span><input id="cat-search" type="search" placeholder="Search ${displayCategory.toLowerCase()}" /><span aria-hidden="true">⌕</span></label>
       <div class="filter-wrap"><label for="cat-sort" class="sr-only">Sort</label><select id="cat-sort"><option value="collection">Collection order</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></div>
     </div>
     <p id="cat-count" class="product-count" aria-live="polite"></p>
     <div class="product-grid" id="cat-grid"></div>
-    <p class="empty-state" id="cat-empty" hidden>Nothing matched that search. Try another word.</p>
+    <p class="empty-state" id="cat-empty" hidden>No pieces are available in this collection right now.</p>
   `;
-  $("#cat-search").addEventListener("input", render);
   $("#cat-sort").addEventListener("change", render);
   document.querySelectorAll("[data-whatsapp-general]").forEach((a) => (a.href = whatsappUrl()));
   render();
