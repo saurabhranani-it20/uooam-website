@@ -26,6 +26,12 @@ OUTPUT_CATEGORY_IMAGES = ROOT / "images" / "category-covers"
 FOLDER_MIME = "application/vnd.google-apps.folder"
 SCOPES = ["https://www.googleapis.com/auth/drive.readonly", "https://www.googleapis.com/auth/spreadsheets.readonly"]
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
+IMAGE_MIME_EXTENSIONS = {
+    "image/jpeg": ".jpg",
+    "image/png": ".png",
+    "image/webp": ".webp",
+    "image/gif": ".gif",
+}
 
 
 def load_local_env():
@@ -84,6 +90,15 @@ def category_asset_key(raw):
     return aliases.get(clean, slug(clean))
 
 
+def is_image(item):
+    return Path(item["name"]).suffix.lower() in IMAGE_EXTENSIONS or item.get("mimeType", "").startswith("image/")
+
+
+def image_extension(item):
+    extension = Path(item["name"]).suffix.lower()
+    return extension if extension in IMAGE_EXTENSIONS else IMAGE_MIME_EXTENSIONS.get(item.get("mimeType"), ".jpg")
+
+
 def list_children(drive, folder_id):
     page_token = None
     results = []
@@ -112,7 +127,7 @@ def images_in_folder(drive, folder_id, relative=""):
         item_path = f"{relative}/{item['name']}".strip("/")
         if item["mimeType"] == FOLDER_MIME:
             images.extend(images_in_folder(drive, item["id"], item_path))
-        elif Path(item["name"]).suffix.lower() in IMAGE_EXTENSIONS:
+        elif is_image(item):
             item["relative_path"] = item_path
             images.append(item)
     return images
@@ -165,7 +180,7 @@ def sync_categories(drive, cover_folder_id, product_categories):
     covers = {
         category_asset_key(Path(item["name"]).stem): item
         for item in list_children(drive, cover_folder_id)
-        if Path(item["name"]).suffix.lower() in IMAGE_EXTENSIONS
+        if is_image(item)
     }
     prior = existing_categories()
     prior_by_key = {category_asset_key(item["name"]): item for item in prior}
@@ -225,7 +240,7 @@ def main():
             missing_photos.append(code)
         local_photos = []
         for index, remote in enumerate(remote_images, start=1):
-            extension = Path(remote["name"]).suffix.lower()
+            extension = image_extension(remote)
             local = OUTPUT_IMAGES / slug(category) / code / f"{index}{extension}"
             download(drive, remote["id"], local)
             local_photos.append(local.relative_to(ROOT).as_posix())
