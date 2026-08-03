@@ -104,9 +104,24 @@ def images_in_folder(drive, folder_id, relative=""):
     return images
 
 
-def matching_images(images, code):
+def matching_images(images, code, photo_group=""):
     code_lower = code.lower()
-    return [image for image in images if code_lower in image["relative_path"].lower()]
+    by_code = [image for image in images if code_lower in image["relative_path"].lower()]
+    if by_code or not str(photo_group).strip():
+        return by_code
+
+    # Some catalogues use a simple Photo Group (for example, 1 or 2) as the
+    # Drive sub-folder / filename. Match whole path segments only: group "1"
+    # must not accidentally select an image from a folder named "10".
+    group = slug(photo_group)
+    matches = []
+    for image in images:
+        path = Path(image["relative_path"])
+        folder_names = [slug(part) for part in path.parts[:-1]]
+        file_stem = slug(path.stem)
+        if group in folder_names or file_stem == group or file_stem.startswith(f"{group}-"):
+            matches.append(image)
+    return matches
 
 
 def download(drive, file_id, destination):
@@ -156,7 +171,8 @@ def main():
             raise SystemExit(f"No Google Drive category folder found for '{category}' (sheet tab '{tab_name}').")
         if folder_id not in images_by_category:
             images_by_category[folder_id] = images_in_folder(drive, folder_id)
-        remote_images = matching_images(images_by_category[folder_id], code)
+        photo_group = value(row, "Photo Group", "PhotoGroup", "Image Group")
+        remote_images = matching_images(images_by_category[folder_id], code, photo_group)
         if not remote_images:
             missing_photos.append(code)
         local_photos = []
