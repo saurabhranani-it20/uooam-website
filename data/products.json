@@ -17,7 +17,9 @@
       "#e7ddd0"
     ],
     "isNew": false,
-    "photos": [],
+    "photos": [
+      "images/products/accessories/UOO-ACC-001/1.jpg"
+    ],
     "price": 1499.0
   },
   {
@@ -38,7 +40,9 @@
       "#e7ddd0"
     ],
     "isNew": false,
-    "photos": [],
+    "photos": [
+      "images/products/dresses/UOO-DRE-001/1.png"
+    ],
     "price": 1999.0
   },
   {
@@ -59,7 +63,11 @@
       "#e7ddd0"
     ],
     "isNew": false,
-    "photos": [],
+    "photos": [
+      "images/products/lehengas/UOO-LEH-001/1.png",
+      "images/products/lehengas/UOO-LEH-001/2.png",
+      "images/products/lehengas/UOO-LEH-001/3.png"
+    ],
     "price": 4999.0
   },
   {
@@ -80,7 +88,9 @@
       "#e7ddd0"
     ],
     "isNew": false,
-    "photos": [],
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-001/1.png"
+    ],
     "price": 999.0
   },
   {
@@ -101,7 +111,10 @@
       "#e7ddd0"
     ],
     "isNew": false,
-    "photos": [],
+    "photos": [
+      "images/products/sarees/UOO-SAR-001/1.png",
+      "images/products/sarees/UOO-SAR-001/2.png"
+    ],
     "price": 3999.0
   },
   {
@@ -122,7 +135,14 @@
       "#e7ddd0"
     ],
     "isNew": false,
-    "photos": [],
+    "photos": [
+      "images/products/suits/UOO-SUI-001/1.png",
+      "images/products/suits/UOO-SUI-001/2.png",
+      "images/products/suits/UOO-SUI-001/3.png",
+      "images/products/suits/UOO-SUI-001/4.png",
+      "images/products/suits/UOO-SUI-001/5.png",
+      "images/products/suits/UOO-SUI-001/6.png"
+    ],
     "price": 2499.0
   },
   {
@@ -143,7 +163,10 @@
       "#e7ddd0"
     ],
     "isNew": true,
-    "photos": [],
+    "photos": [
+      "images/products/women-s-shirts/UOO-WSH-001/1.png",
+      "images/products/women-s-shirts/UOO-WSH-001/2.png"
+    ],
     "price": 999.0
   }
 ]
