@@ -1,5 +1,6 @@
 const WHATSAPP_NUMBER = "918619512140";
 let products = [];
+let categories = [];
 const $ = (selector) => document.querySelector(selector);
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const categoryName = new URLSearchParams(location.search).get("category") || "";
@@ -23,15 +24,7 @@ function getCategoryCoverImage(categoryName) {
     accessories: "accessories",
   }[name] || slugify(categoryName);
 
-  const candidates = [
-    `images/categories/${imageName}.webp`,
-    `images/categories/${imageName}.png`,
-    `images/categories/${imageName}.jpg`,
-    `images/categories/${imageName}.jpeg`,
-    `images/categories/${imageName}.png`,
-    `images/categories/${imageName}.jpg`,
-    `images/categories/${imageName}.jpeg`,
-  ];
+  const candidates = [`images/category-covers/${imageName}.webp`, `images/category-covers/${imageName}.png`, `images/category-covers/${imageName}.jpg`, `images/category-covers/${imageName}.jpeg`];
 
   return candidates.find((path) => path) || "";
 }
@@ -71,8 +64,12 @@ function render() {
 }
 
 async function start() {
-  const response = await fetch(`data/products.json?updated=${Date.now()}`, { cache: "no-store" });
-  products = await response.json();
+  const [productsResponse, categoriesResponse] = await Promise.all([
+    fetch(`data/products.json?updated=${Date.now()}`, { cache: "no-store" }),
+    fetch(`data/categories.json?updated=${Date.now()}`, { cache: "no-store" }),
+  ]);
+  products = await productsResponse.json();
+  categories = await categoriesResponse.json();
   const isNewArrivals = collectionName === "new-arrivals";
   const categoryProducts = isNewArrivals ? products.filter((p) => p.isNew) : products.filter((p) => slugify(p.category) === slugify(categoryName));
   if (categoryProducts.length === 0) {
@@ -83,7 +80,8 @@ async function start() {
   const displayCategory = isNewArrivals ? "New arrivals" : categoryProducts[0].category;
   document.title = `${displayCategory} | UOOAM`;
   document.querySelector("meta[name=description]").content = `Explore our ${displayCategory} collection at UOOAM. Enquire directly on WhatsApp.`;
-  const coverImage = isNewArrivals ? "" : getCategoryCoverImage(displayCategory);
+  const category = categories.find((item) => slugify(item.name) === slugify(displayCategory));
+  const coverImage = isNewArrivals ? "" : category?.coverImage || getCategoryCoverImage(displayCategory);
   const categoryHero = coverImage
     ? `<div class="category-hero-photo"><img src="${coverImage}" alt="${displayCategory} collection" loading="eager" /></div>`
     : "";

@@ -11,7 +11,7 @@ To mark a product as a "New arrival" on the homepage, add `"isNew": true` to its
 To use real photos instead of placeholder artwork, add a `"photos"` array of image paths, for example:
 
 ```json
-"photos": ["images/sarees/UOO-SAR-001.jpg", "images/sarees/UOO-SAR-001-A.jpg"]
+"photos": ["images/products/sarees/UOO-SAR-001/1.jpg", "images/products/sarees/UOO-SAR-001/2.jpg"]
 ```
 
 When `photos` is present, the website shows your real images. When it is absent, it falls back to the elegant placeholder artwork. This makes it easy to add products before photos are ready.

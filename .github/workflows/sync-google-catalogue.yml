@@ -1,6 +1,11 @@
 name: Sync Google catalogue
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-google-catalogue.yml"
+      - "scripts/**"
   workflow_dispatch:
   schedule:
     # 03:30 UTC = 09:00 India Standard Time, every day.
@@ -33,7 +38,7 @@ jobs:
         run: |
           # `images/products` is absent when no Drive photo matches a sheet product yet.
           # Stage the parent folder so both new files and removals are handled safely.
-          git add -A data/products.json images
+          git add -A data/products.json data/categories.json images
           git diff --cached --quiet && exit 0
           git config user.name "uooam-catalogue-bot"
           git config user.email "uooam-catalogue-bot@users.noreply.github.com"

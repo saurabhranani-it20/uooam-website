@@ -69,6 +69,14 @@ function renderCategories() {
       return categoryCard(cat, count, i);
     })
     .join("");
+
+  const heroPhoto = $("#hero-photo");
+  const heroCategory = sorted.find((cat) => slugify(cat.name) === "sarees") || sorted[0];
+  if (heroPhoto && heroCategory) {
+    heroPhoto.src = resolveCategoryCoverImage(heroCategory);
+    heroPhoto.alt = `UOOAM ${heroCategory.name} collection`;
+    heroPhoto.hidden = false;
+  }
 }
 
 function renderNewArrivals() {
