@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/0.9/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://uooam.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://uooam.com/category.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://uooam.com/product.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uooam.com/category.html?category=accessories</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uooam.com/category.html?category=dresses</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uooam.com/category.html?category=lehengas</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uooam.com/category.html?category=mens-shirts</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uooam.com/category.html?category=sarees</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uooam.com/category.html?category=suits</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uooam.com/category.html?category=womens-shirts</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uooam.com/product.html?product=jute-handbag</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uooam.com/product.html?product=blue-dress</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uooam.com/product.html?product=blue-floral-lehenga</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uooam.com/product.html?product=brown-handpainted-shirt</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uooam.com/product.html?product=yellow-floral-saree</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uooam.com/product.html?product=floral-work-co-ord-sets</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uooam.com/product.html?product=handpainted-women-cotton-shirt</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

@@ -18,7 +18,7 @@
     ],
     "isNew": false,
     "photos": [
-      "images/products/accessories/UOO-ACC-001/1.jpg"
+      "images/products/accessories/UOO-ACC-001/1.webp"
     ],
     "price": 1499.0,
     "sortOrder": 1
@@ -42,7 +42,7 @@
     ],
     "isNew": false,
     "photos": [
-      "images/products/dresses/UOO-DRE-001/1.png"
+      "images/products/dresses/UOO-DRE-001/1.webp"
     ],
     "price": 1999.0,
     "sortOrder": 1
@@ -66,9 +66,9 @@
     ],
     "isNew": false,
     "photos": [
-      "images/products/lehengas/UOO-LEH-001/1.png",
-      "images/products/lehengas/UOO-LEH-001/2.png",
-      "images/products/lehengas/UOO-LEH-001/3.png"
+      "images/products/lehengas/UOO-LEH-001/1.webp",
+      "images/products/lehengas/UOO-LEH-001/2.webp",
+      "images/products/lehengas/UOO-LEH-001/3.webp"
     ],
     "price": 4999.0,
     "sortOrder": 1
@@ -92,7 +92,7 @@
     ],
     "isNew": false,
     "photos": [
-      "images/products/men-s-shirts/UOO-MSH-001/1.png"
+      "images/products/men-s-shirts/UOO-MSH-001/1.webp"
     ],
     "price": 999.0,
     "sortOrder": 1
@@ -116,8 +116,8 @@
     ],
     "isNew": false,
     "photos": [
-      "images/products/sarees/UOO-SAR-001/1.png",
-      "images/products/sarees/UOO-SAR-001/2.png"
+      "images/products/sarees/UOO-SAR-001/1.webp",
+      "images/products/sarees/UOO-SAR-001/2.webp"
     ],
     "price": 3999.0,
     "sortOrder": 1
@@ -141,12 +141,12 @@
     ],
     "isNew": false,
     "photos": [
-      "images/products/suits/UOO-SUI-001/1.png",
-      "images/products/suits/UOO-SUI-001/2.png",
-      "images/products/suits/UOO-SUI-001/3.png",
-      "images/products/suits/UOO-SUI-001/4.png",
-      "images/products/suits/UOO-SUI-001/5.png",
-      "images/products/suits/UOO-SUI-001/6.png"
+      "images/products/suits/UOO-SUI-001/1.webp",
+      "images/products/suits/UOO-SUI-001/2.webp",
+      "images/products/suits/UOO-SUI-001/3.webp",
+      "images/products/suits/UOO-SUI-001/4.webp",
+      "images/products/suits/UOO-SUI-001/5.webp",
+      "images/products/suits/UOO-SUI-001/6.webp"
     ],
     "price": 2499.0,
     "sortOrder": 1
@@ -170,8 +170,8 @@
     ],
     "isNew": true,
     "photos": [
-      "images/products/women-s-shirts/UOO-WSH-001/1.png",
-      "images/products/women-s-shirts/UOO-WSH-001/2.png"
+      "images/products/women-s-shirts/UOO-WSH-001/1.webp",
+      "images/products/women-s-shirts/UOO-WSH-001/2.webp"
     ],
     "price": 999.0,
     "sortOrder": 1
