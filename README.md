@@ -22,19 +22,22 @@ The site remains a fast static Cloudflare site, but its product data and product
 
 ### Drive layout
 
-Inside your top-level **Website** Drive folder, create one folder per category (for example `Sarees` and `Lehengas`). Each product's photos must either be inside a folder named with its product code, or have that product code in their filename. For example:
+Inside your top-level **Website** Drive folder, create one folder per category (for example `Sarees` and `Lehengas`) plus a `Category Covers` folder. Each product's photos belong in a folder named with its product code. Image extensions can be `.jpg`, `.jpeg`, `.png`, `.webp`, or `.gif`; use `01`, `02`, `03` to control display order.
 
 ```text
 Website/
+  Category Covers/
+    sarees.webp
+    lehengas.webp
   Sarees/
     UOO-SAR-001/
-      1.jpg
-      2.jpg
+      01.jpg
+      02.png
 ```
 
 ### Sheet layout
 
-Use one tab per category. The required columns are `Product Code`, `Category`, and `Product Name`; the script also reads `Fabric`, `Colour`, `Sizes`, `Availability`, `Description` (or `Notes`), `Price`, and `New` when available. `New` accepts `yes`, `true`, or `1`.
+Use one tab per category. The required columns are `Product Code`, `Category`, and `Product Name`; the script also reads `Fabric`, `Colour`, `Sizes`, `Availability`, `Description` (or `Notes`), `Price`, and `New` when available. `New` accepts `yes`, `true`, or `1`. The old `Photo Group` column is no longer used.
 
 ### One-time setup
 

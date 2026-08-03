@@ -21,6 +21,8 @@ from googleapiclient.http import MediaIoBaseDownload
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_JSON = ROOT / "data" / "products.json"
 OUTPUT_IMAGES = ROOT / "images" / "products"
+OUTPUT_CATEGORY_JSON = ROOT / "data" / "categories.json"
+OUTPUT_CATEGORY_IMAGES = ROOT / "images" / "category-covers"
 FOLDER_MIME = "application/vnd.google-apps.folder"
 SCOPES = ["https://www.googleapis.com/auth/drive.readonly", "https://www.googleapis.com/auth/spreadsheets.readonly"]
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
@@ -70,6 +72,18 @@ def category_name(raw):
     return aliases.get(clean.lower(), clean)
 
 
+def category_asset_key(raw):
+    """Match friendly category names with their concise cover-image names."""
+    aliases = {
+        "men's shirts": "mens-shirts",
+        "men’s shirts": "mens-shirts",
+        "women's shirts": "womens-shirts",
+        "women’s shirts": "womens-shirts",
+    }
+    clean = str(raw).strip().lower()
+    return aliases.get(clean, slug(clean))
+
+
 def list_children(drive, folder_id):
     page_token = None
     results = []
@@ -104,24 +118,14 @@ def images_in_folder(drive, folder_id, relative=""):
     return images
 
 
-def matching_images(images, code, photo_group=""):
-    code_lower = code.lower()
-    by_code = [image for image in images if code_lower in image["relative_path"].lower()]
-    if by_code or not str(photo_group).strip():
-        return by_code
-
-    # Some catalogues use a simple Photo Group (for example, 1 or 2) as the
-    # Drive sub-folder / filename. Match whole path segments only: group "1"
-    # must not accidentally select an image from a folder named "10".
-    group = slug(photo_group)
-    matches = []
-    for image in images:
-        path = Path(image["relative_path"])
-        folder_names = [slug(part) for part in path.parts[:-1]]
-        file_stem = slug(path.stem)
-        if group in folder_names or file_stem == group or file_stem.startswith(f"{group}-"):
-            matches.append(image)
-    return matches
+def matching_images(images, code):
+    """Use only the product-code folder, so old loose images are ignored."""
+    code_key = slug(code)
+    return [
+        image
+        for image in images
+        if code_key in [slug(part) for part in Path(image["relative_path"]).parts[:-1]]
+    ]
 
 
 def download(drive, file_id, destination):
@@ -150,6 +154,48 @@ def sheet_rows(sheets, sheet_id):
                 yield title, record
 
 
+def existing_categories():
+    if not OUTPUT_CATEGORY_JSON.exists():
+        return []
+    return json.loads(OUTPUT_CATEGORY_JSON.read_text(encoding="utf-8"))
+
+
+def sync_categories(drive, cover_folder_id, product_categories):
+    """Download Drive cover images and retain the existing category wording/order."""
+    covers = {
+        category_asset_key(Path(item["name"]).stem): item
+        for item in list_children(drive, cover_folder_id)
+        if Path(item["name"]).suffix.lower() in IMAGE_EXTENSIONS
+    }
+    prior = existing_categories()
+    prior_by_key = {category_asset_key(item["name"]): item for item in prior}
+    desired_keys = {category_asset_key(name) for name in product_categories}
+    ordered = [item["name"] for item in prior if category_asset_key(item["name"]) in desired_keys]
+    ordered.extend(name for name in product_categories if category_asset_key(name) not in {category_asset_key(item) for item in ordered})
+
+    shutil.rmtree(OUTPUT_CATEGORY_IMAGES, ignore_errors=True)
+    categories = []
+    for index, name in enumerate(ordered, start=1):
+        key = category_asset_key(name)
+        previous = prior_by_key.get(key, {})
+        cover = covers.get(key)
+        cover_path = previous.get("coverImage", "")
+        if cover:
+            local = OUTPUT_CATEGORY_IMAGES / cover["name"]
+            download(drive, cover["id"], local)
+            cover_path = local.relative_to(ROOT).as_posix()
+        categories.append({
+            "name": name,
+            "tagline": previous.get("tagline", ""),
+            "coverImage": cover_path,
+            "order": previous.get("order", index),
+            "tone": previous.get("tone", "#a5543e"),
+            "tone2": previous.get("tone2", "#e7ddd0"),
+        })
+    OUTPUT_CATEGORY_JSON.write_text(json.dumps(categories, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"Synced {len(categories)} category covers.")
+
+
 def main():
     load_local_env()
     credentials_info = json.loads(required("GOOGLE_SERVICE_ACCOUNT_JSON"))
@@ -158,6 +204,9 @@ def main():
     sheets = build("sheets", "v4", credentials=credentials, cache_discovery=False)
     drive_root = required("GOOGLE_DRIVE_FOLDER_ID")
     category_folders = find_category_folders(drive, drive_root)
+    cover_folder_id = category_folders.pop(slug("Category Covers"), None)
+    if not cover_folder_id:
+        raise SystemExit("No Google Drive folder named 'Category Covers' was found in the Website folder.")
     images_by_category = {}
     products = []
     missing_photos = []
@@ -171,8 +220,7 @@ def main():
             raise SystemExit(f"No Google Drive category folder found for '{category}' (sheet tab '{tab_name}').")
         if folder_id not in images_by_category:
             images_by_category[folder_id] = images_in_folder(drive, folder_id)
-        photo_group = value(row, "Photo Group", "PhotoGroup", "Image Group")
-        remote_images = matching_images(images_by_category[folder_id], code, photo_group)
+        remote_images = matching_images(images_by_category[folder_id], code)
         if not remote_images:
             missing_photos.append(code)
         local_photos = []
@@ -204,6 +252,7 @@ def main():
         products.append(product)
     products.sort(key=lambda product: (product["category"].lower(), product["code"].lower()))
     OUTPUT_JSON.write_text(json.dumps(products, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    sync_categories(drive, cover_folder_id, list(dict.fromkeys(product["category"] for product in products)))
     print(f"Synced {len(products)} products.")
     if missing_photos:
         print("No matching Drive photo found for: " + ", ".join(missing_photos), file=sys.stderr)
