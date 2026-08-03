@@ -31,7 +31,9 @@ jobs:
         run: python scripts/sync_google_catalogue.py
       - name: Commit changed catalogue
         run: |
-          git add data/products.json images/products
+          # `images/products` is absent when no Drive photo matches a sheet product yet.
+          # Stage the parent folder so both new files and removals are handled safely.
+          git add -A data/products.json images
           git diff --cached --quiet && exit 0
           git config user.name "uooam-catalogue-bot"
           git config user.email "uooam-catalogue-bot@users.noreply.github.com"
