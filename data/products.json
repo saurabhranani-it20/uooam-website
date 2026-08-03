@@ -1,5 +1,89 @@
 [
   {
+    "code": "UOO-ACC-001",
+    "name": "Jute Handbag",
+    "category": "Accessories",
+    "fabric": "Jute",
+    "color": "Ivory",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Jute handbag with hand paint work.",
+    "imageLabel": "Jute Handbag",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [],
+    "price": 1499.0
+  },
+  {
+    "code": "UOO-DRE-001",
+    "name": "Blue Dress",
+    "category": "Dresses",
+    "fabric": "Cotton",
+    "color": "Blue",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Blue dress with straight lines",
+    "imageLabel": "Blue Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [],
+    "price": 1999.0
+  },
+  {
+    "code": "UOO-LEH-001",
+    "name": "Blue Floral Lehenga",
+    "category": "Lehengas",
+    "fabric": "Organza",
+    "color": "Blue, White",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Blue Floral Lehenga with multiple plates",
+    "imageLabel": "Blue Floral Lehenga",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [],
+    "price": 4999.0
+  },
+  {
+    "code": "UOO-MSH-001",
+    "name": "Brown Handpainted Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Brown",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Brown Handpainted Shirt for Men for Summers",
+    "imageLabel": "Brown Handpainted Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [],
+    "price": 999.0
+  },
+  {
     "code": "UOO-SAR-001",
     "name": "Yellow Floral Saree",
     "category": "Sarees",
@@ -17,18 +101,19 @@
       "#e7ddd0"
     ],
     "isNew": false,
-    "photos": []
+    "photos": [],
+    "price": 3999.0
   },
   {
-    "code": "UOO-SAR-002",
-    "name": "Red Floral Border Saree",
-    "category": "Sarees",
+    "code": "UOO-SUI-001",
+    "name": "Floral Work Co-Ord Sets",
+    "category": "Suits",
     "fabric": "Silk",
-    "color": "Red",
-    "sizes": "One size",
+    "color": "Multi",
+    "sizes": "XS to 5XL",
     "availability": "Available",
-    "description": "Red Floral Border Saree",
-    "imageLabel": "Red Floral Border Saree",
+    "description": "Floral Work Co-Ord Sets made with hand paint work",
+    "imageLabel": "Floral Work Co-Ord Sets",
     "images": [
       "Product view"
     ],
@@ -37,6 +122,28 @@
       "#e7ddd0"
     ],
     "isNew": false,
-    "photos": []
+    "photos": [],
+    "price": 2499.0
+  },
+  {
+    "code": "UOO-WSH-001",
+    "name": "Handpainted Women Cotton Shirt",
+    "category": "Women's Shirts",
+    "fabric": "Cotton",
+    "color": "Multi",
+    "sizes": "S-L",
+    "availability": "Available",
+    "description": "Handpainted Women Cotton Shirt with V Neck & Bubble Sleeves",
+    "imageLabel": "Handpainted Women Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": true,
+    "photos": [],
+    "price": 999.0
   }
 ]

@@ -2,43 +2,57 @@
   {
     "name": "Sarees",
     "tagline": "Drapes for every occasion",
-    "coverImage": "images/categories/sarees.webp",
-    "order": 1
+    "coverImage": "images/category-covers/sarees.webp",
+    "order": 1,
+    "tone": "#a5543e",
+    "tone2": "#e7ddd0"
   },
   {
     "name": "Suits",
     "tagline": "Elegant sets, effortless grace",
-    "coverImage": "images/categories/suits.webp",
-    "order": 2
+    "coverImage": "images/category-covers/suits.webp",
+    "order": 2,
+    "tone": "#a5543e",
+    "tone2": "#e7ddd0"
   },
   {
     "name": "Lehengas",
     "tagline": "Celebration-ready silhouettes",
-    "coverImage": "images/categories/lehengas.webp",
-    "order": 3
+    "coverImage": "images/category-covers/lehengas.webp",
+    "order": 3,
+    "tone": "#a5543e",
+    "tone2": "#e7ddd0"
   },
   {
     "name": "Dresses",
     "tagline": "Modern pieces, considered cuts",
-    "coverImage": "images/categories/dresses.webp",
-    "order": 4
+    "coverImage": "images/category-covers/dresses.webp",
+    "order": 4,
+    "tone": "#a5543e",
+    "tone2": "#e7ddd0"
   },
   {
     "name": "Women's Shirts",
     "tagline": "Tailored staples with polish",
-    "coverImage": "images/categories/womens-shirts.png",
-    "order": 5
+    "coverImage": "images/category-covers/womens-shirts.webp",
+    "order": 5,
+    "tone": "#a5543e",
+    "tone2": "#e7ddd0"
   },
   {
     "name": "Men's Shirts",
     "tagline": "Crisp everyday essentials",
-    "coverImage": "images/categories/mens-shirts.webp",
-    "order": 6
+    "coverImage": "images/category-covers/mens-shirts.webp",
+    "order": 6,
+    "tone": "#a5543e",
+    "tone2": "#e7ddd0"
   },
   {
     "name": "Accessories",
     "tagline": "Finishing touches that matter",
-    "coverImage": "images/categories/accessories.webp",
-    "order": 7
+    "coverImage": "images/category-covers/accessories.webp",
+    "order": 7,
+    "tone": "#a5543e",
+    "tone2": "#e7ddd0"
   }
 ]
