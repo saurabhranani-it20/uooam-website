@@ -38,7 +38,7 @@ jobs:
         run: |
           # `images/products` is absent when no Drive photo matches a sheet product yet.
           # Stage the parent folder so both new files and removals are handled safely.
-          git add -A data/products.json data/categories.json images
+          git add -A data/products.json data/categories.json images sitemap.xml
           git diff --cached --quiet && exit 0
           git config user.name "uooam-catalogue-bot"
           git config user.email "uooam-catalogue-bot@users.noreply.github.com"

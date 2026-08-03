@@ -17,21 +17,20 @@ from pathlib import Path
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
+from PIL import Image, ImageOps, UnidentifiedImageError
+from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_JSON = ROOT / "data" / "products.json"
 OUTPUT_IMAGES = ROOT / "images" / "products"
 OUTPUT_CATEGORY_JSON = ROOT / "data" / "categories.json"
 OUTPUT_CATEGORY_IMAGES = ROOT / "images" / "category-covers"
+OUTPUT_SITEMAP = ROOT / "sitemap.xml"
 FOLDER_MIME = "application/vnd.google-apps.folder"
 SCOPES = ["https://www.googleapis.com/auth/drive.readonly", "https://www.googleapis.com/auth/spreadsheets.readonly"]
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
-IMAGE_MIME_EXTENSIONS = {
-    "image/jpeg": ".jpg",
-    "image/png": ".png",
-    "image/webp": ".webp",
-    "image/gif": ".gif",
-}
+MAX_IMAGE_DIMENSION = 2000
+WEBP_QUALITY = 90
 
 
 def load_local_env():
@@ -108,11 +107,6 @@ def is_image(item):
     return Path(item["name"]).suffix.lower() in IMAGE_EXTENSIONS or item.get("mimeType", "").startswith("image/")
 
 
-def image_extension(item):
-    extension = Path(item["name"]).suffix.lower()
-    return extension if extension in IMAGE_EXTENSIONS else IMAGE_MIME_EXTENSIONS.get(item.get("mimeType"), ".jpg")
-
-
 def list_children(drive, folder_id):
     page_token = None
     results = []
@@ -157,14 +151,33 @@ def matching_images(images, code):
     ]
 
 
-def download(drive, file_id, destination):
-    destination.parent.mkdir(parents=True, exist_ok=True)
+def download_bytes(drive, file_id):
     request = drive.files().get_media(fileId=file_id, supportsAllDrives=True)
-    with destination.open("wb") as stream:
-        downloader = MediaIoBaseDownload(stream, request)
-        done = False
-        while not done:
-            _, done = downloader.next_chunk()
+    stream = io.BytesIO()
+    downloader = MediaIoBaseDownload(stream, request)
+    done = False
+    while not done:
+        _, done = downloader.next_chunk()
+    return stream.getvalue()
+
+
+def download_as_webp(drive, item, destination):
+    """Create a display-ready WebP copy without changing the Drive original."""
+    source = io.BytesIO(download_bytes(drive, item["id"]))
+    try:
+        with Image.open(source) as image:
+            icc_profile = image.info.get("icc_profile")
+            image = ImageOps.exif_transpose(image)
+            if image.mode not in {"RGB", "RGBA"}:
+                image = image.convert("RGBA" if "transparency" in image.info else "RGB")
+            width, height = image.size
+            if max(width, height) > MAX_IMAGE_DIMENSION:
+                scale = MAX_IMAGE_DIMENSION / max(width, height)
+                image = image.resize((round(width * scale), round(height * scale)), Image.Resampling.LANCZOS)
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            image.save(destination, "WEBP", quality=WEBP_QUALITY, method=6, icc_profile=icc_profile)
+    except UnidentifiedImageError as error:
+        raise SystemExit(f"Could not optimise image '{item['name']}'. Please use JPG, PNG, or WebP.") from error
 
 
 def sheet_rows(sheets, sheet_id):
@@ -210,8 +223,8 @@ def sync_categories(drive, cover_folder_id, product_categories):
         cover = covers.get(key)
         cover_path = previous.get("coverImage", "")
         if cover:
-            local = OUTPUT_CATEGORY_IMAGES / cover["name"]
-            download(drive, cover["id"], local)
+            local = OUTPUT_CATEGORY_IMAGES / f"{key}.webp"
+            download_as_webp(drive, cover, local)
             cover_path = local.relative_to(ROOT).as_posix()
         categories.append({
             "name": name,
@@ -223,6 +236,19 @@ def sync_categories(drive, cover_folder_id, product_categories):
         })
     OUTPUT_CATEGORY_JSON.write_text(json.dumps(categories, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Synced {len(categories)} category covers.")
+
+
+def write_sitemap(products):
+    """Expose each public category and product URL to search engines."""
+    urls = [
+        ("https://uooam.com/", "weekly", "1.0"),
+        ("https://uooam.com/category.html", "weekly", "0.8"),
+    ]
+    categories = list(dict.fromkeys(product["category"] for product in products))
+    urls.extend((f"https://uooam.com/category.html?category={category_asset_key(category)}", "weekly", "0.8") for category in categories)
+    urls.extend((f"https://uooam.com/product.html?product={slug(product['name'])}", "weekly", "0.7") for product in products)
+    rows = "\n".join(f"  <url><loc>{escape(url)}</loc><changefreq>{frequency}</changefreq><priority>{priority}</priority></url>" for url, frequency, priority in urls)
+    OUTPUT_SITEMAP.write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{rows}\n</urlset>\n', encoding="utf-8")
 
 
 def main():
@@ -258,9 +284,8 @@ def main():
             missing_photos.append(code)
         local_photos = []
         for index, remote in enumerate(remote_images, start=1):
-            extension = image_extension(remote)
-            local = OUTPUT_IMAGES / slug(category) / code / f"{index}{extension}"
-            download(drive, remote["id"], local)
+            local = OUTPUT_IMAGES / slug(category) / code / f"{index}.webp"
+            download_as_webp(drive, remote, local)
             local_photos.append(local.relative_to(ROOT).as_posix())
         name = str(value(row, "Product Name", "Name")).strip()
         notes = str(value(row, "Description", "Notes")).strip()
@@ -289,6 +314,7 @@ def main():
     products.sort(key=lambda product: (product["category"].lower(), product.get("sortOrder", float("inf")), product["code"].lower()))
     OUTPUT_JSON.write_text(json.dumps(products, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     sync_categories(drive, cover_folder_id, list(dict.fromkeys(product["category"] for product in products)))
+    write_sitemap(products)
     print(f"Synced {len(products)} products.")
     if unpublished_products:
         print(f"Skipped {unpublished_products} unpublished product(s).")

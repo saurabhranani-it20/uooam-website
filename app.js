@@ -16,13 +16,18 @@ function whatsappUrl(product) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
+function availabilityBadge(product) {
+  const label = (product.availability || "").trim();
+  return label ? `<span class="availability-badge availability-${slugify(label)}">${label}</span>` : "";
+}
+
 function card(product, index) {
   const url = `product.html?product=${slugify(product.name)}`;
   const img = product.photos && product.photos[0]
     ? `<div class="product-photo"><img src="${product.photos[0]}" alt="${product.name}" loading="lazy" /></div>`
     : `<div class="product-image" style="--tone1:${product.tones[0]};--tone2:${product.tones[1]}"><i>${product.category}</i><span>${product.imageLabel}</span></div>`;
   const price = product.price ? `<p class="product-price">₹${Number(product.price).toLocaleString("en-IN")}</p>` : `<p class="product-price">Price on request</p>`;
-  return `<article class="product-card" style="animation-delay:${Math.min(index * 35, 350)}ms"><a class="product-link" href="${url}" aria-label="View ${product.name}">${img}<div class="product-meta"><h3>${product.name}</h3>${price}</div></a></article>`;
+  return `<article class="product-card" style="animation-delay:${Math.min(index * 35, 350)}ms"><a class="product-link" href="${url}" aria-label="View ${product.name}">${img}${availabilityBadge(product)}<div class="product-meta"><h3>${product.name}</h3>${price}</div></a></article>`;
 }
 
 function resolveCategoryCoverImage(cat) {

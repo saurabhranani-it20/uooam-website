@@ -37,6 +37,11 @@ function whatsappUrl(product) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
+function availabilityBadge(product) {
+  const label = (product.availability || "").trim();
+  return label ? `<span class="availability-badge availability-${slugify(label)}">${label}</span>` : "";
+}
+
 function imageHtml(product, i) {
   if (product.photos && product.photos[i]) {
     return `<img src="${product.photos[i]}" alt="${product.name} — view ${i + 1}" loading="lazy" />`;
@@ -50,7 +55,7 @@ function card(product, index) {
     ? `<div class="product-photo"><img src="${product.photos[0]}" alt="${product.name}" loading="lazy" /></div>`
     : `<div class="product-image" style="--tone1:${product.tones[0]};--tone2:${product.tones[1]}"><i>${product.category}</i><span>${product.imageLabel}</span></div>`;
   const price = product.price ? `<p class="product-price">₹${Number(product.price).toLocaleString("en-IN")}</p>` : `<p class="product-price">Price on request</p>`;
-  return `<article class="product-card" style="animation-delay:${Math.min(index * 35, 350)}ms"><a class="product-link" href="${url}" aria-label="View ${product.name}">${img}<div class="product-meta"><h3>${product.name}</h3>${price}</div></a></article>`;
+  return `<article class="product-card" style="animation-delay:${Math.min(index * 35, 350)}ms"><a class="product-link" href="${url}" aria-label="View ${product.name}">${img}${availabilityBadge(product)}<div class="product-meta"><h3>${product.name}</h3>${price}</div></a></article>`;
 }
 
 function render() {
@@ -59,6 +64,8 @@ function render() {
   let shown = products.filter((p) => `${p.name} ${p.code} ${p.color} ${p.fabric}`.toLowerCase().includes(query));
   if (sort === "alphabetical") shown = [...shown].sort((a, b) => a.name.localeCompare(b.name));
   if (sort === "collection") shown = [...shown].sort((a, b) => (a.sortOrder ?? Number.POSITIVE_INFINITY) - (b.sortOrder ?? Number.POSITIVE_INFINITY) || a.code.localeCompare(b.code));
+  if (sort === "price-low") shown = [...shown].sort((a, b) => (Number(a.price) || Number.POSITIVE_INFINITY) - (Number(b.price) || Number.POSITIVE_INFINITY) || a.code.localeCompare(b.code));
+  if (sort === "price-high") shown = [...shown].sort((a, b) => (Number(b.price) || Number.NEGATIVE_INFINITY) - (Number(a.price) || Number.NEGATIVE_INFINITY) || a.code.localeCompare(b.code));
   $("#cat-grid").innerHTML = shown.map(card).join("");
   $("#cat-count").textContent = `${shown.length} piece${shown.length === 1 ? "" : "s"}`;
   $("#cat-empty").hidden = shown.length !== 0;
@@ -80,6 +87,8 @@ async function start() {
   products = categoryProducts;
   const displayCategory = isNewArrivals ? "New arrivals" : categoryProducts[0].category;
   document.title = `${displayCategory} | UOOAM`;
+  const canonicalQuery = isNewArrivals ? "collection=new-arrivals" : `category=${categorySlug(displayCategory)}`;
+  document.querySelector('link[rel="canonical"]')?.setAttribute("href", new URL(`category.html?${canonicalQuery}`, location.href).href);
   document.querySelector("meta[name=description]").content = `Explore our ${displayCategory} collection at UOOAM. Enquire directly on WhatsApp.`;
   const category = categories.find((item) => categorySlug(item.name) === categorySlug(displayCategory));
   const coverImage = isNewArrivals ? "" : category?.coverImage || getCategoryCoverImage(displayCategory);
@@ -96,7 +105,7 @@ async function start() {
     </div>
     <div class="catalogue-controls">
       <label class="search"><span class="sr-only">Search</span><input id="cat-search" type="search" placeholder="Search ${displayCategory.toLowerCase()}" /><span aria-hidden="true">⌕</span></label>
-      <div class="filter-wrap"><label for="cat-sort" class="sr-only">Sort</label><select id="cat-sort"><option value="collection">Collection order</option><option value="alphabetical">Alphabetical</option></select></div>
+      <div class="filter-wrap"><label for="cat-sort" class="sr-only">Sort</label><select id="cat-sort"><option value="collection">Collection order</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></div>
     </div>
     <p id="cat-count" class="product-count" aria-live="polite"></p>
     <div class="product-grid" id="cat-grid"></div>
