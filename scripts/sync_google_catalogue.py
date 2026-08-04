@@ -18,6 +18,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
 from PIL import Image, ImageOps, UnidentifiedImageError
+from pillow_heif import register_heif_opener
 from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,6 +32,10 @@ SCOPES = ["https://www.googleapis.com/auth/drive.readonly", "https://www.googlea
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 MAX_IMAGE_DIMENSION = 2000
 WEBP_QUALITY = 90
+
+# iPhone photos are often stored as HEIC/HEIF. Register support before Pillow
+# opens any downloaded Drive files, including files without an extension.
+register_heif_opener()
 
 
 def load_local_env():
@@ -162,7 +167,11 @@ def download_bytes(drive, file_id):
 
 
 def download_as_webp(drive, item, destination):
-    """Create a display-ready WebP copy without changing the Drive original."""
+    """Create a display-ready WebP copy without changing the Drive original.
+
+    Returns False when Drive contains a non-photo or damaged image, so one
+    unusable file cannot prevent the rest of the catalogue from publishing.
+    """
     source = io.BytesIO(download_bytes(drive, item["id"]))
     try:
         with Image.open(source) as image:
@@ -176,8 +185,10 @@ def download_as_webp(drive, item, destination):
                 image = image.resize((round(width * scale), round(height * scale)), Image.Resampling.LANCZOS)
             destination.parent.mkdir(parents=True, exist_ok=True)
             image.save(destination, "WEBP", quality=WEBP_QUALITY, method=6, icc_profile=icc_profile)
-    except UnidentifiedImageError as error:
-        raise SystemExit(f"Could not optimise image '{item['name']}'. Please use JPG, PNG, or WebP.") from error
+            return True
+    except (UnidentifiedImageError, OSError):
+        print(f"Skipping unsupported or damaged image '{item['name']}'. Please use JPG, PNG, WebP, or HEIC.", file=sys.stderr)
+        return False
 
 
 def sheet_rows(sheets, sheet_id):
@@ -224,8 +235,8 @@ def sync_categories(drive, cover_folder_id, product_categories):
         cover_path = previous.get("coverImage", "")
         if cover:
             local = OUTPUT_CATEGORY_IMAGES / f"{key}.webp"
-            download_as_webp(drive, cover, local)
-            cover_path = local.relative_to(ROOT).as_posix()
+            if download_as_webp(drive, cover, local):
+                cover_path = local.relative_to(ROOT).as_posix()
         categories.append({
             "name": name,
             "tagline": previous.get("tagline", ""),
@@ -285,8 +296,8 @@ def main():
         local_photos = []
         for index, remote in enumerate(remote_images, start=1):
             local = OUTPUT_IMAGES / slug(category) / code / f"{index}.webp"
-            download_as_webp(drive, remote, local)
-            local_photos.append(local.relative_to(ROOT).as_posix())
+            if download_as_webp(drive, remote, local):
+                local_photos.append(local.relative_to(ROOT).as_posix())
         name = str(value(row, "Product Name", "Name")).strip()
         notes = str(value(row, "Description", "Notes")).strip()
         product = {
