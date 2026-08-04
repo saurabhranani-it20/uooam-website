@@ -272,14 +272,14 @@
   },
   {
     "code": "UOO-DRE-008",
-    "name": "Halter Classic MIni Dress",
+    "name": "Halter Classic Mini Dress",
     "category": "Dresses",
     "fabric": "Glooming Georgette",
     "color": "Black",
     "sizes": "S to XXL",
     "availability": "Available",
     "description": "Blooming with effortless elegance, this georgette mini dress features a graceful halter neckline and delicate frill detailing. Crafted in a lightweight, flowy silhouette, it offers the perfect blend of femininity and charm. A stunning choice for brunches, vacations, and special occasions.",
-    "imageLabel": "Halter Classic MIni Dress",
+    "imageLabel": "Halter Classic Mini Dress",
     "images": [
       "Product view"
     ],
@@ -1258,7 +1258,7 @@
     "color": "Yellow",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Yellow Silk Saree",
+    "description": "Brighten your wardrobe with this exquisite handpainted yellow silk saree, adorned with elegant floral and majestic peacock motifs. Crafted by skilled artisans, each brushstroke reflects timeless craftsmanship and artistic beauty. The vibrant design is perfectly complemented by a matching running blouse piece. Ideal for festive celebrations, weddings, and special occasions, this saree is a graceful blend of tradition and sophistication.",
     "imageLabel": "Yellow Silk Saree",
     "images": [
       "Product view"
@@ -1279,11 +1279,11 @@
     "code": "UOO-SAR-002",
     "name": "Red Rose Saree",
     "category": "Sarees",
-    "fabric": "Georgette",
+    "fabric": "Chiffon",
     "color": "Red",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Red Rose Saree",
+    "description": "Make a timeless statement with this elegant red pure georgette handpainted saree, featuring delicate rose motifs that exude charm and sophistication. The lightweight georgette fabric drapes beautifully, offering effortless grace and comfort. Paired with a matching running blouse piece, this saree is perfect for festive occasions, parties, and celebrations. A beautiful blend of handcrafted artistry and classic elegance.",
     "imageLabel": "Red Rose Saree",
     "images": [
       "Product view"
@@ -1301,14 +1301,14 @@
   },
   {
     "code": "UOO-SAR-003",
-    "name": "Floral Georgette Saree",
+    "name": "Floral Chiffon Saree",
     "category": "Sarees",
-    "fabric": "Georgette",
+    "fabric": "Chiffon",
     "color": "Pink",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Floral Georgette Saree",
-    "imageLabel": "Floral Georgette Saree",
+    "description": "Grace your wardrobe with this elegant floral handpainted pure chiffon saree, beautifully crafted with intricate floral artwork. Made from soft, lightweight chiffon, it offers a graceful drape and all-day comfort. This washable saree is easy to maintain while preserving its handcrafted charm. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
+    "imageLabel": "Floral Chiffon Saree",
     "images": [
       "Product view"
     ],
@@ -1327,11 +1327,11 @@
     "code": "UOO-SAR-004",
     "name": "Multi Floral Saree",
     "category": "Sarees",
-    "fabric": "Georgette",
+    "fabric": "Chiffon",
     "color": "Multi",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Multi Floral Saree",
+    "description": "Grace your wardrobe with this elegant floral handpainted pure chiffon saree, beautifully crafted with intricate floral artwork. Made from soft, lightweight chiffon, it offers a graceful drape and all-day comfort. This washable saree is easy to maintain while preserving its handcrafted charm. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Multi Floral Saree",
     "images": [
       "Product view"
@@ -1351,11 +1351,11 @@
     "code": "UOO-SAR-005",
     "name": "White Flower Saree",
     "category": "Sarees",
-    "fabric": "Georgette",
+    "fabric": "Chiffon",
     "color": "Orange",
     "sizes": "One size",
     "availability": "Available",
-    "description": "White Flower Saree",
+    "description": "Grace your wardrobe with this elegant floral handpainted pure chiffon saree, beautifully crafted with intricate floral artwork. Made from soft, lightweight chiffon, it offers a graceful drape and all-day comfort. This washable saree is easy to maintain while preserving its handcrafted charm. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "White Flower Saree",
     "images": [
       "Product view"
@@ -1375,11 +1375,11 @@
     "code": "UOO-SAR-006",
     "name": "Yellow Floral Saree",
     "category": "Sarees",
-    "fabric": "Georgette",
+    "fabric": "Chiffon",
     "color": "Yellow",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Yellow Floral Saree",
+    "description": "Grace your wardrobe with this elegant floral handpainted pure chiffon saree, beautifully crafted with intricate floral artwork. Made from soft, lightweight chiffon, it offers a graceful drape and all-day comfort. This washable saree is easy to maintain while preserving its handcrafted charm. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Yellow Floral Saree",
     "images": [
       "Product view"
@@ -1399,11 +1399,11 @@
     "code": "UOO-SAR-007",
     "name": "Orange Floral Saree",
     "category": "Sarees",
-    "fabric": "Georgette",
+    "fabric": "Chiffon",
     "color": "Orange",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Orange Floral Saree",
+    "description": "Grace your wardrobe with this elegant floral handpainted pure chiffon saree, beautifully crafted with intricate floral artwork. Made from soft, lightweight chiffon, it offers a graceful drape and all-day comfort. This washable saree is easy to maintain while preserving its handcrafted charm. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Orange Floral Saree",
     "images": [
       "Product view"
@@ -1423,11 +1423,11 @@
     "code": "UOO-SAR-008",
     "name": "Multi Pink Saree",
     "category": "Sarees",
-    "fabric": "Georgette",
+    "fabric": "Chiffon",
     "color": "Pink",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Multi Pink Saree",
+    "description": "Grace your wardrobe with this elegant floral handpainted pure chiffon saree, beautifully crafted with intricate floral artwork. Made from soft, lightweight chiffon, it offers a graceful drape and all-day comfort. This washable saree is easy to maintain while preserving its handcrafted charm. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Multi Pink Saree",
     "images": [
       "Product view"
@@ -1451,7 +1451,7 @@
     "color": "White",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Custom Name Saree",
+    "description": "Celebrate your unique style with this exquisite handpainted organza saree, featuring delicate artistic detailing and your name custom handpainted for a truly one-of-a-kind creation. Crafted from lightweight, sheer organza, it offers an elegant drape with a luxurious finish. Each saree is individually painted by skilled artisans, making every piece exclusive and personal. Perfect for weddings, festive celebrations, gifting, and special occasions where you want to make a memorable statement.",
     "imageLabel": "Custom Name Saree",
     "images": [
       "Product view"
@@ -1475,7 +1475,7 @@
     "color": "Yellow",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Musturd Floral Saree",
+    "description": "Enhance your ethnic wardrobe with this beautiful handpainted georgette saree, adorned with elegant floral motifs that showcase timeless artistry. Crafted from soft, lightweight georgette, it offers a graceful drape and lasting comfort. This washable saree is designed for easy care while retaining the beauty of its handcrafted details. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Musturd Floral Saree",
     "images": [
       "Product view"
@@ -1499,7 +1499,7 @@
     "color": "Lilac",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Lilac Saree",
+    "description": "Enhance your ethnic wardrobe with this beautiful handpainted georgette saree, adorned with elegant floral motifs that showcase timeless artistry. Crafted from soft, lightweight georgette, it offers a graceful drape and lasting comfort. This washable saree is designed for easy care while retaining the beauty of its handcrafted details. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Lilac Saree",
     "images": [
       "Product view"
@@ -1523,7 +1523,7 @@
     "color": "Green",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Green Rose Line Saree",
+    "description": "Enhance your ethnic wardrobe with this beautiful handpainted georgette saree, adorned with elegant floral motifs that showcase timeless artistry. Crafted from soft, lightweight georgette, it offers a graceful drape and lasting comfort. This washable saree is designed for easy care while retaining the beauty of its handcrafted details. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Green Rose Line Saree",
     "images": [
       "Product view"
@@ -1547,7 +1547,7 @@
     "color": "Lavender",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Lavender Saree",
+    "description": "Enhance your ethnic wardrobe with this beautiful handpainted georgette saree, adorned with elegant floral motifs that showcase timeless artistry. Crafted from soft, lightweight georgette, it offers a graceful drape and lasting comfort. This washable saree is designed for easy care while retaining the beauty of its handcrafted details. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Lavender Saree",
     "images": [
       "Product view"
@@ -1571,7 +1571,7 @@
     "color": "Pink",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Pink Rose Saree",
+    "description": "Enhance your ethnic wardrobe with this beautiful handpainted georgette saree, adorned with elegant floral motifs that showcase timeless artistry. Crafted from soft, lightweight georgette, it offers a graceful drape and lasting comfort. This washable saree is designed for easy care while retaining the beauty of its handcrafted details. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Pink Rose Saree",
     "images": [
       "Product view"
@@ -1595,7 +1595,7 @@
     "color": "Yellow",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Yellow Organza Saree",
+    "description": "Elevate your style with this exquisite handpainted organza saree, adorned with delicate floral motifs that reflect timeless elegance and artisanal craftsmanship. The lightweight, sheer organza fabric drapes beautifully, creating a graceful and sophisticated look. Every saree is individually handpainted, making each piece unique and full of artistic charm. Perfect for festive celebrations, weddings, parties, and special occasions.",
     "imageLabel": "Yellow Organza Saree",
     "images": [
       "Product view"
@@ -1619,7 +1619,7 @@
     "color": "Pink",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Blue Rose Saree",
+    "description": "Elevate your style with this exquisite handpainted organza saree, adorned with delicate floral motifs that reflect timeless elegance and artisanal craftsmanship. The lightweight, sheer organza fabric drapes beautifully, creating a graceful and sophisticated look. Every saree is individually handpainted, making each piece unique and full of artistic charm. Perfect for festive celebrations, weddings, parties, and special occasions.",
     "imageLabel": "Blue Rose Saree",
     "images": [
       "Product view"
@@ -1643,7 +1643,7 @@
     "color": "Black",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Evil Eye Saree",
+    "description": "Experience timeless elegance with this beautiful Glooming Silk handpainted saree, crafted with exquisite artistry and attention to detail. The luxurious fabric offers a graceful drape and a soft, comfortable feel for every occasion. This washable saree combines handcrafted beauty with easy maintenance, making it ideal for regular wear. Perfect for festive celebrations, weddings, parties, and special occasions.",
     "imageLabel": "Evil Eye Saree",
     "images": [
       "Product view"
@@ -1667,7 +1667,7 @@
     "color": "Grey",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Grey Rose Saree",
+    "description": "Enhance your ethnic wardrobe with this beautiful handpainted georgette saree, adorned with elegant floral motifs that showcase timeless artistry. Crafted from soft, lightweight georgette, it offers a graceful drape and lasting comfort. This washable saree is designed for easy care while retaining the beauty of its handcrafted details. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Grey Rose Saree",
     "images": [
       "Product view"
@@ -1691,7 +1691,7 @@
     "color": "Green",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Green Swiss Saree",
+    "description": "Enhance your ethnic wardrobe with this beautiful handpainted georgette saree, adorned with elegant floral motifs that showcase timeless artistry. Crafted from soft, lightweight georgette, it offers a graceful drape and lasting comfort. This washable saree is designed for easy care while retaining the beauty of its handcrafted details. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
     "imageLabel": "Green Swiss Saree",
     "images": [
       "Product view"
@@ -1715,7 +1715,7 @@
     "color": "Sky Blue",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Thai Rose Saree",
+    "description": "Elevate your style with this exquisite handpainted organza saree, adorned with delicate floral motifs that reflect timeless elegance and artisanal craftsmanship. The lightweight, sheer organza fabric drapes beautifully, creating a graceful and sophisticated look. Every saree is individually handpainted, making each piece unique and full of artistic charm. Perfect for festive celebrations, weddings, parties, and special occasions.",
     "imageLabel": "Thai Rose Saree",
     "images": [
       "Product view"
@@ -1739,7 +1739,7 @@
     "color": "Butter Yellow",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Butter Lotus Saree",
+    "description": "Elevate your style with this exquisite handpainted organza saree, adorned with delicate floral motifs that reflect timeless elegance and artisanal craftsmanship. The lightweight, sheer organza fabric drapes beautifully, creating a graceful and sophisticated look. Every saree is individually handpainted, making each piece unique and full of artistic charm. Perfect for festive celebrations, weddings, parties, and special occasions.",
     "imageLabel": "Butter Lotus Saree",
     "images": [
       "Product view"
@@ -1763,7 +1763,7 @@
     "color": "White",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Koho Saree",
+    "description": "Elevate your style with this exquisite handpainted organza saree, adorned with delicate floral motifs that reflect timeless elegance and artisanal craftsmanship. The lightweight, sheer organza fabric drapes beautifully, creating a graceful and sophisticated look. Every saree is individually handpainted, making each piece unique and full of artistic charm. Perfect for festive celebrations, weddings, parties, and special occasions.",
     "imageLabel": "Koho Saree",
     "images": [
       "Product view"
@@ -1787,7 +1787,7 @@
     "color": "Sky Blue",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Lotus Sky Saree",
+    "description": "Elevate your style with this exquisite handpainted organza saree, adorned with delicate floral motifs that reflect timeless elegance and artisanal craftsmanship. The lightweight, sheer organza fabric drapes beautifully, creating a graceful and sophisticated look. Every saree is individually handpainted, making each piece unique and full of artistic charm. Perfect for festive celebrations, weddings, parties, and special occasions.",
     "imageLabel": "Lotus Sky Saree",
     "images": [
       "Product view"
@@ -1811,7 +1811,7 @@
     "color": "Green",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Tulip Saree",
+    "description": "Embrace effortless elegance with this handpainted Kota Doria saree, beautifully crafted with artistic detailing by skilled artisans. Woven from lightweight and breathable Kota Doria fabric, it offers unmatched comfort and a graceful drape. This washable saree is easy to maintain while preserving its handcrafted charm. Perfect for festive occasions, office wear, casual gatherings, and everyday elegance.",
     "imageLabel": "Tulip Saree",
     "images": [
       "Product view"
@@ -1836,7 +1836,7 @@
     "color": "Black",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Bali Floral Saree",
+    "description": "Elevate your style with this exquisite handpainted organza saree, adorned with delicate floral motifs that reflect timeless elegance and artisanal craftsmanship. The lightweight, sheer organza fabric drapes beautifully, creating a graceful and sophisticated look. Every saree is individually handpainted, making each piece unique and full of artistic charm. Perfect for festive celebrations, weddings, parties, and special occasions.",
     "imageLabel": "Bali Floral Saree",
     "images": [
       "Product view"
@@ -1853,15 +1853,41 @@
     "sortOrder": 25
   },
   {
+    "code": "UOO-SAR-026",
+    "name": "Yellow Chiffon Saree",
+    "category": "Sarees",
+    "fabric": "Chiffon",
+    "color": "Yellow",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Grace your wardrobe with this elegant floral handpainted pure chiffon saree, beautifully crafted with intricate floral artwork. Made from soft, lightweight chiffon, it offers a graceful drape and all-day comfort. This washable saree is easy to maintain while preserving its handcrafted charm. Perfect for festive occasions, casual gatherings, and elegant everyday wear.",
+    "imageLabel": "Yellow Chiffon Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-026/1.webp",
+      "images/products/sarees/UOO-SAR-026/2.webp",
+      "images/products/sarees/UOO-SAR-026/3.webp"
+    ],
+    "price": 4999.0,
+    "sortOrder": 26
+  },
+  {
     "code": "UOO-SUI-001",
-    "name": "",
+    "name": "Classic Cordset",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Add a touch of artistic elegance to your wardrobe with this handpainted silk cord set, featuring beautifully crafted designs that make every piece unique. Made from premium silk fabric, it offers a luxurious feel, a comfortable fit, and a graceful silhouette. Each outfit is individually handpainted by skilled artisans, showcasing exceptional craftsmanship. Perfect for festive celebrations, parties, and stylish everyday wear.",
+    "imageLabel": "Classic Cordset",
     "images": [
       "Product view"
     ],
@@ -1878,18 +1904,19 @@
       "images/products/suits/UOO-SUI-001/5.webp",
       "images/products/suits/UOO-SUI-001/6.webp"
     ],
+    "price": 1999.0,
     "sortOrder": 1
   },
   {
     "code": "UOO-SUI-002",
-    "name": "",
+    "name": "Dusty Anarkali Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Grey",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "A graceful grey handpainted Anarkali suit set designed for effortless elegance and timeless charm. Featuring a beautifully handpainted kurta paired with matching pants and a flowing dupatta, this ensemble showcases skilled artisanal craftsmanship. The soft silhouette and unique handpainted details make every piece one of a kind. Perfect for festive celebrations, family gatherings, and special occasions.",
+    "imageLabel": "Dusty Anarkali Suit",
     "images": [
       "Product view"
     ],
@@ -1903,18 +1930,19 @@
       "images/products/suits/UOO-SUI-002/2.webp",
       "images/products/suits/UOO-SUI-002/3.webp"
     ],
+    "price": 3599.0,
     "sortOrder": 2
   },
   {
     "code": "UOO-SUI-003",
-    "name": "",
+    "name": "Bloom Indo Set",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Chiffon",
+    "color": "Pink",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Bring effortless charm to your wardrobe with this pink handpainted chiffon palazzo kurta set, designed with a contemporary Indo-Western touch. Delicate handpainted artwork adds a unique artisanal appeal, while the lightweight chiffon fabric offers comfort and graceful movement. The coordinated palazzo and kurta create a stylish silhouette that blends tradition with modern elegance. Perfect for festive occasions, brunches, parties, and special celebrations.",
+    "imageLabel": "Bloom Indo Set",
     "images": [
       "Product view"
     ],
@@ -1927,18 +1955,19 @@
       "images/products/suits/UOO-SUI-003/1.webp",
       "images/products/suits/UOO-SUI-003/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 3
   },
   {
     "code": "UOO-SUI-004",
-    "name": "",
+    "name": "Handembroidered Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Wine",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Crafted for timeless elegance, this hand-embroidered silk suit set showcases exquisite craftsmanship with intricate detailing on luxurious silk fabric. Paired with a delicate organza dupatta, the ensemble offers a perfect balance of sophistication and grace. The rich texture and refined silhouette make it an ideal choice for festive celebrations, weddings, and special occasions. A classic addition to any wardrobe, designed to leave a lasting impression.",
+    "imageLabel": "Handembroidered Suit",
     "images": [
       "Product view"
     ],
@@ -1951,18 +1980,19 @@
       "images/products/suits/UOO-SUI-004/1.webp",
       "images/products/suits/UOO-SUI-004/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 4
   },
   {
     "code": "UOO-SUI-005",
-    "name": "",
+    "name": "Handembroidered Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Green",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Crafted for timeless elegance, this hand-embroidered silk suit set showcases exquisite craftsmanship with intricate detailing on luxurious silk fabric. Paired with a delicate organza dupatta, the ensemble offers a perfect balance of sophistication and grace. The rich texture and refined silhouette make it an ideal choice for festive celebrations, weddings, and special occasions. A classic addition to any wardrobe, designed to leave a lasting impression.",
+    "imageLabel": "Handembroidered Suit",
     "images": [
       "Product view"
     ],
@@ -1975,18 +2005,19 @@
       "images/products/suits/UOO-SUI-005/1.webp",
       "images/products/suits/UOO-SUI-005/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 5
   },
   {
     "code": "UOO-SUI-006",
-    "name": "",
+    "name": "Handpainted Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Wine",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Celebrate timeless craftsmanship with this handpainted silk suit set, thoughtfully designed to bring together elegance and artistry. Featuring intricate handpainted details and paired with a lightweight organza dupatta, this ensemble offers a graceful silhouette with a luxurious finish. Every piece is individually handcrafted, making it truly unique. Perfect for festive celebrations, weddings, and special occasions where sophistication meets tradition.",
+    "imageLabel": "Handpainted Suit",
     "images": [
       "Product view"
     ],
@@ -1999,18 +2030,19 @@
       "images/products/suits/UOO-SUI-006/1.webp",
       "images/products/suits/UOO-SUI-006/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 6
   },
   {
     "code": "UOO-SUI-007",
-    "name": "",
+    "name": "Handembroidered Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Sky Blue",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Crafted for timeless elegance, this hand-embroidered silk suit set showcases exquisite craftsmanship with intricate detailing on luxurious silk fabric. Paired with a delicate organza dupatta, the ensemble offers a perfect balance of sophistication and grace. The rich texture and refined silhouette make it an ideal choice for festive celebrations, weddings, and special occasions. A classic addition to any wardrobe, designed to leave a lasting impression.",
+    "imageLabel": "Handembroidered Suit",
     "images": [
       "Product view"
     ],
@@ -2023,18 +2055,19 @@
       "images/products/suits/UOO-SUI-007/1.webp",
       "images/products/suits/UOO-SUI-007/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 7
   },
   {
     "code": "UOO-SUI-008",
-    "name": "",
+    "name": "Handembroidered Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Bottle Green",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Crafted for timeless elegance, this hand-embroidered silk suit set showcases exquisite craftsmanship with intricate detailing on luxurious silk fabric. Paired with a delicate organza dupatta, the ensemble offers a perfect balance of sophistication and grace. The rich texture and refined silhouette make it an ideal choice for festive celebrations, weddings, and special occasions. A classic addition to any wardrobe, designed to leave a lasting impression.",
+    "imageLabel": "Handembroidered Suit",
     "images": [
       "Product view"
     ],
@@ -2047,18 +2080,19 @@
       "images/products/suits/UOO-SUI-008/1.webp",
       "images/products/suits/UOO-SUI-008/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 8
   },
   {
     "code": "UOO-SUI-009",
-    "name": "",
+    "name": "Handembroidered Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Pink",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Crafted for timeless elegance, this hand-embroidered silk suit set showcases exquisite craftsmanship with intricate detailing on luxurious silk fabric. Paired with a delicate organza dupatta, the ensemble offers a perfect balance of sophistication and grace. The rich texture and refined silhouette make it an ideal choice for festive celebrations, weddings, and special occasions. A classic addition to any wardrobe, designed to leave a lasting impression.",
+    "imageLabel": "Handembroidered Suit",
     "images": [
       "Product view"
     ],
@@ -2071,18 +2105,19 @@
       "images/products/suits/UOO-SUI-009/1.webp",
       "images/products/suits/UOO-SUI-009/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 9
   },
   {
     "code": "UOO-SUI-010",
-    "name": "",
+    "name": "Doria Cordset",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Doria",
+    "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "A refreshing blend of comfort and contemporary style, this three-piece ensemble features a printed cotton crop top, matching pants, and a lightweight Kota Doria overlay kurta. Designed with effortless elegance in mind, the breathable fabrics and layered silhouette create a chic Indo-fusion look. Perfect for brunches, festive gatherings, vacations, and everyday celebrations where comfort meets timeless style.",
+    "imageLabel": "Doria Cordset",
     "images": [
       "Product view"
     ],
@@ -2099,18 +2134,19 @@
       "images/products/suits/UOO-SUI-010/5.webp",
       "images/products/suits/UOO-SUI-010/6.webp"
     ],
+    "price": 1999.0,
     "sortOrder": 10
   },
   {
     "code": "UOO-SUI-011",
-    "name": "",
+    "name": "Handpainted Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Blue",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Celebrate timeless craftsmanship with this handpainted silk suit set, thoughtfully designed to bring together elegance and artistry. Featuring intricate handpainted details and paired with a lightweight organza dupatta, this ensemble offers a graceful silhouette with a luxurious finish. Every piece is individually handcrafted, making it truly unique. Perfect for festive celebrations, weddings, and special occasions where sophistication meets tradition.",
+    "imageLabel": "Handpainted Suit",
     "images": [
       "Product view"
     ],
@@ -2123,18 +2159,19 @@
       "images/products/suits/UOO-SUI-011/1.webp",
       "images/products/suits/UOO-SUI-011/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 11
   },
   {
     "code": "UOO-SUI-012",
-    "name": "",
+    "name": "Handpainted Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Sky Blue",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Celebrate timeless craftsmanship with this handpainted silk suit set, thoughtfully designed to bring together elegance and artistry. Featuring intricate handpainted details and paired with a lightweight organza dupatta, this ensemble offers a graceful silhouette with a luxurious finish. Every piece is individually handcrafted, making it truly unique. Perfect for festive celebrations, weddings, and special occasions where sophistication meets tradition.",
+    "imageLabel": "Handpainted Suit",
     "images": [
       "Product view"
     ],
@@ -2148,18 +2185,19 @@
       "images/products/suits/UOO-SUI-012/2.webp",
       "images/products/suits/UOO-SUI-012/3.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 12
   },
   {
     "code": "UOO-SUI-013",
-    "name": "",
+    "name": "Handpainted Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Pink",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Celebrate timeless craftsmanship with this handpainted silk suit set, thoughtfully designed to bring together elegance and artistry. Featuring intricate handpainted details and paired with a lightweight organza dupatta, this ensemble offers a graceful silhouette with a luxurious finish. Every piece is individually handcrafted, making it truly unique. Perfect for festive celebrations, weddings, and special occasions where sophistication meets tradition.",
+    "imageLabel": "Handpainted Suit",
     "images": [
       "Product view"
     ],
@@ -2172,18 +2210,19 @@
       "images/products/suits/UOO-SUI-013/1.webp",
       "images/products/suits/UOO-SUI-013/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 13
   },
   {
     "code": "UOO-SUI-014",
-    "name": "",
+    "name": "Handpainted Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Green",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Celebrate timeless craftsmanship with this handpainted silk suit set, thoughtfully designed to bring together elegance and artistry. Featuring intricate handpainted details and paired with a lightweight organza dupatta, this ensemble offers a graceful silhouette with a luxurious finish. Every piece is individually handcrafted, making it truly unique. Perfect for festive celebrations, weddings, and special occasions where sophistication meets tradition.",
+    "imageLabel": "Handpainted Suit",
     "images": [
       "Product view"
     ],
@@ -2196,18 +2235,19 @@
       "images/products/suits/UOO-SUI-014/1.webp",
       "images/products/suits/UOO-SUI-014/2.webp"
     ],
+    "price": 2999.0,
     "sortOrder": 14
   },
   {
     "code": "UOO-SUI-015",
-    "name": "",
+    "name": "Flare Doria Suit",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Doria",
+    "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Crafted from lightweight and breathable Kota Doria fabric, this flared kurta and palazzo set offers a perfect blend of comfort and elegance. The graceful silhouette and airy texture create an effortlessly refined look, making it ideal for all-day wear. Designed with timeless appeal, this ensemble transitions beautifully from casual gatherings to festive occasions. A versatile addition to your wardrobe that celebrates understated sophistication.",
+    "imageLabel": "Flare Doria Suit",
     "images": [
       "Product view"
     ],
@@ -2222,18 +2262,19 @@
       "images/products/suits/UOO-SUI-015/3.webp",
       "images/products/suits/UOO-SUI-015/4.webp"
     ],
+    "price": 1999.0,
     "sortOrder": 15
   },
   {
     "code": "UOO-SUI-016",
-    "name": "",
+    "name": "Pleated Kota Kurta",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Doria",
+    "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Designed with graceful detailing, this Kota Doria kurta features a beautifully tailored bodice accented with delicate pleats and fine tucks that add texture and elegance. The flared silhouette flows effortlessly, creating a flattering and timeless look. Crafted from lightweight, breathable Kota Doria fabric, it offers all-day comfort with an airy feel. Perfect for festive celebrations, casual gatherings, and elegant everyday wear.",
+    "imageLabel": "Pleated Kota Kurta",
     "images": [
       "Product view"
     ],
@@ -2246,18 +2287,19 @@
       "images/products/suits/UOO-SUI-016/1.webp",
       "images/products/suits/UOO-SUI-016/2.webp"
     ],
+    "price": 899.0,
     "sortOrder": 16
   },
   {
     "code": "UOO-SUI-017",
-    "name": "",
+    "name": "Silk Kurta Pant Set",
     "category": "Suits",
-    "fabric": "",
-    "color": "",
+    "fabric": "Silk",
+    "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Crafted from luxurious silk, this flared kurta and pant set is designed to bring together elegance and everyday comfort. Delicate lace detailing along the edges adds a refined finishing touch, enhancing its timeless appeal. The graceful flared silhouette offers effortless movement, while the coordinated pants complete the look with understated sophistication. Perfect for festive celebrations, intimate gatherings, and elegant day-to-evening wear.",
+    "imageLabel": "Silk Kurta Pant Set",
     "images": [
       "Product view"
     ],
@@ -2271,18 +2313,19 @@
       "images/products/suits/UOO-SUI-017/2.webp",
       "images/products/suits/UOO-SUI-017/3.webp"
     ],
+    "price": 1399.0,
     "sortOrder": 17
   },
   {
     "code": "UOO-WSH-001",
-    "name": "Handpainted Women Cotton Shirt",
+    "name": "Khadi Handpainted Shirt",
     "category": "Women's Shirts",
     "fabric": "Cotton",
     "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "Handpainted Women Cotton Shirt with V Neck & Bubble Sleeves",
-    "imageLabel": "Handpainted Women Cotton Shirt",
+    "description": "Crafted from breathable khadi cotton, this handpainted women's shirt showcases unique artisanal craftsmanship with elegant handpainted detailing. Soft, comfortable, and effortlessly stylish, it's perfect for everyday wear, casual outings, and contemporary ethnic styling.",
+    "imageLabel": "Khadi Handpainted Shirt",
     "images": [
       "Product view"
     ],
@@ -2300,14 +2343,14 @@
   },
   {
     "code": "UOO-WSH-002",
-    "name": "",
+    "name": "Striped Handpainted Shirt",
     "category": "Women's Shirts",
-    "fabric": "",
+    "fabric": "Cotton",
     "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Refresh your everyday wardrobe with this printed striped cotton shirt, thoughtfully accented with a handpainted motif for a unique artistic touch. Crafted from soft, breathable cotton, it offers all-day comfort with effortless style. A perfect blend of classic prints and handcrafted detailing, making it ideal for casual outings, workdays, and relaxed weekend looks.",
+    "imageLabel": "Striped Handpainted Shirt",
     "images": [
       "Product view"
     ],
@@ -2320,18 +2363,19 @@
       "images/products/women-s-shirts/UOO-WSH-002/1.webp",
       "images/products/women-s-shirts/UOO-WSH-002/2.webp"
     ],
+    "price": 899.0,
     "sortOrder": 2
   },
   {
     "code": "UOO-WSH-003",
-    "name": "",
+    "name": "Doria Handpainted Shirt",
     "category": "Women's Shirts",
-    "fabric": "",
+    "fabric": "Doria",
     "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Delicately crafted from lightweight Kota Doria fabric, this handpainted frilled top blends artisanal charm with effortless elegance. The soft frill detailing adds a graceful touch, while the unique handpainted motifs make every piece one of a kind. Breathable, comfortable, and versatile, it's perfect for casual outings, festive gatherings, and chic everyday styling.",
+    "imageLabel": "Doria Handpainted Shirt",
     "images": [
       "Product view"
     ],
@@ -2348,18 +2392,19 @@
       "images/products/women-s-shirts/UOO-WSH-003/5.webp",
       "images/products/women-s-shirts/UOO-WSH-003/6.webp"
     ],
+    "price": 899.0,
     "sortOrder": 3
   },
   {
     "code": "UOO-WSH-004",
-    "name": "",
+    "name": "Patchwork Shirt",
     "category": "Women's Shirts",
-    "fabric": "",
+    "fabric": "Organza",
     "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Designed with a modern aesthetic, this organza patchwork shirt blends delicate textures with contemporary elegance. Thoughtfully crafted from lightweight organza, the artistic patchwork detailing adds depth, character, and a distinctive charm to every piece. Its airy silhouette ensures comfort while making a refined style statement. Perfect for brunches, casual outings, festive gatherings, and effortless day-to-evening wear.",
+    "imageLabel": "Patchwork Shirt",
     "images": [
       "Product view"
     ],
@@ -2372,18 +2417,19 @@
       "images/products/women-s-shirts/UOO-WSH-004/1.webp",
       "images/products/women-s-shirts/UOO-WSH-004/2.webp"
     ],
+    "price": 999.0,
     "sortOrder": 4
   },
   {
     "code": "UOO-WSH-005",
-    "name": "",
+    "name": "Organza Handpainted Shirt",
     "category": "Women's Shirts",
-    "fabric": "",
+    "fabric": "Organza",
     "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Bring effortless elegance to your wardrobe with this handpainted organza shirt, adorned with delicate floral motifs that celebrate timeless artistry. Featuring graceful puff sleeves and a lightweight, sheer silhouette, it offers a perfect balance of sophistication and comfort. Each piece is individually handpainted by skilled artisans, making it truly one of a kind. Ideal for brunches, festive gatherings, and chic everyday styling.",
+    "imageLabel": "Organza Handpainted Shirt",
     "images": [
       "Product view"
     ],
@@ -2402,18 +2448,19 @@
       "images/products/women-s-shirts/UOO-WSH-005/7.webp",
       "images/products/women-s-shirts/UOO-WSH-005/8.webp"
     ],
+    "price": 999.0,
     "sortOrder": 5
   },
   {
     "code": "UOO-WSH-006",
-    "name": "",
+    "name": "Organza Tie Top",
     "category": "Women's Shirts",
-    "fabric": "",
+    "fabric": "Organza",
     "color": "Multi",
     "sizes": "XS to XXL",
     "availability": "Available",
-    "description": "",
-    "imageLabel": "",
+    "description": "Delicate and effortlessly stylish, this organza top features a charming front tie detail that adds a contemporary touch to its elegant silhouette. Crafted from lightweight, sheer organza, it offers an airy feel with graceful movement. The thoughtfully designed tie-front accent creates a flattering fit, making it both versatile and chic. Perfect for brunches, vacations, casual outings, and special occasions.",
+    "imageLabel": "Organza Tie Top",
     "images": [
       "Product view"
     ],
@@ -2424,33 +2471,12 @@
     "isNew": false,
     "photos": [
       "images/products/women-s-shirts/UOO-WSH-006/1.webp",
-      "images/products/women-s-shirts/UOO-WSH-006/2.webp"
+      "images/products/women-s-shirts/UOO-WSH-006/2.webp",
+      "images/products/women-s-shirts/UOO-WSH-006/3.webp",
+      "images/products/women-s-shirts/UOO-WSH-006/4.webp",
+      "images/products/women-s-shirts/UOO-WSH-006/5.webp"
     ],
+    "price": 999.0,
     "sortOrder": 6
-  },
-  {
-    "code": "UOO-WSH-007",
-    "name": "",
-    "category": "Women's Shirts",
-    "fabric": "",
-    "color": "Multi",
-    "sizes": "XS to XXL",
-    "availability": "Available",
-    "description": "",
-    "imageLabel": "",
-    "images": [
-      "Product view"
-    ],
-    "tones": [
-      "#a5543e",
-      "#e7ddd0"
-    ],
-    "isNew": false,
-    "photos": [
-      "images/products/women-s-shirts/UOO-WSH-007/1.webp",
-      "images/products/women-s-shirts/UOO-WSH-007/2.webp",
-      "images/products/women-s-shirts/UOO-WSH-007/3.webp"
-    ],
-    "sortOrder": 7
   }
 ]
