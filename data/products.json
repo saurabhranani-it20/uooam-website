@@ -1,14 +1,14 @@
 [
   {
     "code": "UOO-ACC-001",
-    "name": "Jute Handbag",
+    "name": "Jute Handpainted Handbag",
     "category": "Accessories",
     "fabric": "Jute",
     "color": "Ivory",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Jute handbag with hand paint work.",
-    "imageLabel": "Jute Handbag",
+    "description": "Eco-friendly jute handbag featuring a beautiful handpainted sunflower design. Durable, washable, and perfect for everyday use. A stylish, sustainable choice that's great for work, shopping, or casual outings.",
+    "imageLabel": "Jute Handpainted Handbag",
     "images": [
       "Product view"
     ],
@@ -24,15 +24,92 @@
     "sortOrder": 1
   },
   {
-    "code": "UOO-DRE-001",
-    "name": "Blue Dress",
-    "category": "Dresses",
-    "fabric": "Cotton",
-    "color": "Blue",
+    "code": "UOO-ACC-002",
+    "name": "Canvas Handpainted Sling Bag",
+    "category": "Accessories",
+    "fabric": "Canvas",
+    "color": "Black / White",
     "sizes": "One size",
     "availability": "Available",
-    "description": "Blue dress with straight lines",
-    "imageLabel": "Blue Dress",
+    "description": "Stylish canvas sling bag featuring elegant handpainted black-and-white floral artwork. Lightweight, durable, and perfect for everyday essentials.",
+    "imageLabel": "Canvas Handpainted Sling Bag",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/accessories/UOO-ACC-002/1.webp",
+      "images/products/accessories/UOO-ACC-002/2.webp",
+      "images/products/accessories/UOO-ACC-002/3.webp",
+      "images/products/accessories/UOO-ACC-002/4.webp",
+      "images/products/accessories/UOO-ACC-002/5.webp"
+    ],
+    "price": 699.0,
+    "sortOrder": 2
+  },
+  {
+    "code": "UOO-ACC-003",
+    "name": "Corduroy Handbag",
+    "category": "Accessories",
+    "fabric": "Corduroy",
+    "color": "Black",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "A compact and stylish corduroy handbag designed for everyday elegance. Crafted from soft, durable corduroy fabric, it offers a lightweight feel with enough space for your daily essentials. Perfect for casual outings, shopping, or everyday use, this versatile handbag combines comfort, functionality, and timeless style.",
+    "imageLabel": "Corduroy Handbag",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/accessories/UOO-ACC-003/1.webp",
+      "images/products/accessories/UOO-ACC-003/2.webp"
+    ],
+    "price": 699.0,
+    "sortOrder": 3
+  },
+  {
+    "code": "UOO-ACC-004",
+    "name": "Corduroy Sling Bag",
+    "category": "Accessories",
+    "fabric": "Corduroy",
+    "color": "Black",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Versatile and stylish, this corduroy bag can be carried as a handbag or worn as a sling, making it perfect for every occasion. Crafted from soft, durable corduroy fabric, it offers a spacious interior for your daily essentials while maintaining a lightweight, comfortable design. A perfect blend of fashion, functionality, and everyday convenience.",
+    "imageLabel": "Corduroy Sling Bag",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/accessories/UOO-ACC-004/1.webp"
+    ],
+    "price": 699.0,
+    "sortOrder": 4
+  },
+  {
+    "code": "UOO-DRE-001",
+    "name": "Sunflower Handpainted Dress",
+    "category": "Dresses",
+    "fabric": "Cotton",
+    "color": "Sky Blue",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Soft, breathable cotton dress in timeless sky blue and white stripes, designed for effortless everyday elegance. Hand-painted sunflower artwork adds a unique artisanal touch, making every piece one of a kind. Lightweight, comfortable, and perfect for sunny days and easy styling.",
+    "imageLabel": "Sunflower Handpainted Dress",
     "images": [
       "Product view"
     ],
@@ -44,19 +121,466 @@
     "photos": [
       "images/products/dresses/UOO-DRE-001/1.webp"
     ],
-    "price": 1999.0,
+    "price": 1699.0,
     "sortOrder": 1
   },
   {
+    "code": "UOO-DRE-002",
+    "name": "Bali Handpainted Dress",
+    "category": "Dresses",
+    "fabric": "Georgette",
+    "color": "Lavender",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Grace meets versatility in this hand-painted georgette dress, crafted for effortless elegance. Featuring detachable puff sleeves, it lets you switch from a romantic statement look to a sleek silhouette with ease. Lightweight, flowy, and uniquely handcrafted for every occasion.",
+    "imageLabel": "Bali Handpainted Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-002/1.webp",
+      "images/products/dresses/UOO-DRE-002/2.webp"
+    ],
+    "price": 2699.0
+  },
+  {
+    "code": "UOO-DRE-003",
+    "name": "Dior Frilled Short Dress",
+    "category": "Dresses",
+    "fabric": "Cotton",
+    "color": "Brown",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Playful and effortlessly chic, this cotton mini dress features classic brown and beige printed stripes for a timeless appeal. Designed with a one-shoulder neckline and delicate frill detailing, it brings the perfect balance of comfort and statement style. A breezy pick for sunny days, brunches, and weekend getaways.",
+    "imageLabel": "Dior Frilled Short Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-003/1.webp"
+    ],
+    "price": 799.0
+  },
+  {
+    "code": "UOO-DRE-004",
+    "name": "Butter Drape Dress",
+    "category": "Dresses",
+    "fabric": "Cotton",
+    "color": "Yellow",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Bright, breezy, and effortlessly elegant, this cotton dress features cheerful yellow stripes for a fresh summer look. Designed with a flattering waist drape and a stunning backless silhouette, it blends comfort with modern sophistication. Perfect for sun-soaked days, vacations, and effortless dressing.",
+    "imageLabel": "Butter Drape Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-004/1.webp",
+      "images/products/dresses/UOO-DRE-004/2.webp"
+    ],
+    "price": 1599.0
+  },
+  {
+    "code": "UOO-DRE-005",
+    "name": "Thai Frilled White Dress",
+    "category": "Dresses",
+    "fabric": "Cotton",
+    "color": "White",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Timeless and effortlessly feminine, this white cotton dress is designed with soft frill detailing for a graceful, romantic look. Crafted from breathable cotton, it offers all-day comfort while keeping your style fresh and elegant. A versatile wardrobe essential for every season.",
+    "imageLabel": "Thai Frilled White Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-005/1.webp"
+    ],
+    "price": 1699.0
+  },
+  {
+    "code": "UOO-DRE-006",
+    "name": "Floral Cordset",
+    "category": "Dresses",
+    "fabric": "Cotton",
+    "color": "Off White",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Effortlessly stylish and comfortably chic, this cotton co-ord set features a classic pant and crop top silhouette. The top is beautifully adorned with delicate floral appliqué, adding a handcrafted touch of elegance. Perfect for effortless day-to-evening dressing with a blend of comfort and charm.",
+    "imageLabel": "Floral Cordset",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-006/1.webp"
+    ],
+    "price": 2499.0
+  },
+  {
+    "code": "UOO-DRE-007",
+    "name": "Noram Short Dress",
+    "category": "Dresses",
+    "fabric": "Cotton Net",
+    "color": "White",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Playful and effortlessly feminine, this mini dress features a flattering tube neckline and soft frill detailing for a chic, romantic look. Designed to make a statement while keeping you comfortable, it's the perfect choice for brunches, vacations, and sunny day outings.",
+    "imageLabel": "Noram Short Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-007/1.webp"
+    ],
+    "price": 1399.0
+  },
+  {
+    "code": "UOO-DRE-008",
+    "name": "Halter Classic MIni Dress",
+    "category": "Dresses",
+    "fabric": "Glooming Georgette",
+    "color": "Black",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Blooming with effortless elegance, this georgette mini dress features a graceful halter neckline and delicate frill detailing. Crafted in a lightweight, flowy silhouette, it offers the perfect blend of femininity and charm. A stunning choice for brunches, vacations, and special occasions.",
+    "imageLabel": "Halter Classic MIni Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-008/1.webp"
+    ],
+    "price": 1299.0
+  },
+  {
+    "code": "UOO-DRE-009",
+    "name": "Polka Mini Dress",
+    "category": "Dresses",
+    "fabric": "Glooming Georgette",
+    "color": "Black",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Playful meets artistry in this blooming georgette mini dress, adorned with hand-painted polka dots for a truly one-of-a-kind look. Crafted from lightweight, flowy georgette, it offers effortless elegance with a touch of whimsy. Perfect for celebrations, vacations, and statement summer styling.",
+    "imageLabel": "Polka Mini Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-009/1.webp"
+    ],
+    "price": 1399.0
+  },
+  {
+    "code": "UOO-DRE-010",
+    "name": "Shifli Cordset",
+    "category": "Dresses",
+    "fabric": "Cotton Shifli",
+    "color": "White",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Fresh, feminine, and effortlessly stylish, this cotton Schiffli co-ord set features a beautifully crafted top paired with matching shorts. The intricate Schiffli embroidery adds timeless elegance, while the breathable fabric ensures all-day comfort. Perfect for vacations, brunch dates, and sunny summer days.",
+    "imageLabel": "Shifli Cordset",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-010/1.webp"
+    ],
+    "price": 2599.0
+  },
+  {
+    "code": "UOO-DRE-011",
+    "name": "One Off Shoulder Dress",
+    "category": "Dresses",
+    "fabric": "Cotton",
+    "color": "Green",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Effortlessly chic and made for sunny days, this one-shoulder cotton dress features refreshing green stripes for a timeless appeal. Crafted from breathable cotton, it offers all-day comfort with a flattering, modern silhouette. The perfect blend of elegance and ease for vacations, brunches, and weekend outings.",
+    "imageLabel": "One Off Shoulder Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-011/1.webp"
+    ],
+    "price": 1599.0
+  },
+  {
+    "code": "UOO-DRE-012",
+    "name": "Handpainted Grey Line Dress",
+    "category": "Dresses",
+    "fabric": "Georgette",
+    "color": "Grey",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Elegant and versatile, this hand-painted georgette dress is designed to make every moment special. Featuring detachable sleeves, it lets you effortlessly switch between two stunning looks. Crafted from lightweight, flowy georgette, each piece is uniquely hand-painted for a timeless, artistic finish.",
+    "imageLabel": "Handpainted Grey Line Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-012/1.webp",
+      "images/products/dresses/UOO-DRE-012/2.webp",
+      "images/products/dresses/UOO-DRE-012/3.webp"
+    ],
+    "price": 2499.0
+  },
+  {
+    "code": "UOO-DRE-013",
+    "name": "Handpainted Brown Circle Dress",
+    "category": "Dresses",
+    "fabric": "Georgette",
+    "color": "Brown",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Elegant and versatile, this hand-painted georgette dress is designed to make every moment special. Featuring detachable sleeves, it lets you effortlessly switch between two stunning looks. Crafted from lightweight, flowy georgette, each piece is uniquely hand-painted for a timeless, artistic finish.",
+    "imageLabel": "Handpainted Brown Circle Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-013/1.webp"
+    ],
+    "price": 2499.0
+  },
+  {
+    "code": "UOO-DRE-014",
+    "name": "Loop Hold Dress",
+    "category": "Dresses",
+    "fabric": "Kota Doria",
+    "color": "White",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Lightweight and effortlessly elegant, this Kota Doria dress is crafted for timeless comfort and grace. Featuring a delicate loop tie neckline, it adds a subtle touch of sophistication to its airy silhouette. Perfect for warm days, casual outings, and understated everyday style.",
+    "imageLabel": "Loop Hold Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-014/1.webp",
+      "images/products/dresses/UOO-DRE-014/2.webp"
+    ],
+    "price": 1699.0
+  },
+  {
+    "code": "UOO-DRE-015",
+    "name": "Buttercup Dress",
+    "category": "Dresses",
+    "fabric": "Silk",
+    "color": "Green",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Elegant with an artistic touch, this silk A-line mini dress is beautifully hand-painted, making every piece truly one of a kind. Crafted from luxurious silk, it offers a graceful drape and effortless comfort. A timeless statement piece for celebrations, soirées, and special occasions.",
+    "imageLabel": "Buttercup Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-015/1.webp",
+      "images/products/dresses/UOO-DRE-015/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-DRE-016",
+    "name": "Sky Dress",
+    "category": "Dresses",
+    "fabric": "Silk",
+    "color": "Sky Blue",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Elegant with an artistic touch, this silk A-line mini dress is beautifully hand-painted, making every piece truly one of a kind. Crafted from luxurious silk, it offers a graceful drape and effortless comfort. A timeless statement piece for celebrations, soirées, and special occasions.",
+    "imageLabel": "Sky Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-016/1.webp",
+      "images/products/dresses/UOO-DRE-016/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-DRE-017",
+    "name": "Floral Dress",
+    "category": "Dresses",
+    "fabric": "Silk",
+    "color": "Wine",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Elegant with an artistic touch, this silk A-line mini dress is beautifully hand-painted, making every piece truly one of a kind. Crafted from luxurious silk, it offers a graceful drape and effortless comfort. A timeless statement piece for celebrations, soirées, and special occasions.",
+    "imageLabel": "Floral Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-017/1.webp",
+      "images/products/dresses/UOO-DRE-017/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-DRE-018",
+    "name": "Lily Dress",
+    "category": "Dresses",
+    "fabric": "Silk",
+    "color": "Pink",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Elegant with an artistic touch, this silk A-line mini dress is beautifully hand-painted, making every piece truly one of a kind. Crafted from luxurious silk, it offers a graceful drape and effortless comfort. A timeless statement piece for celebrations, soirées, and special occasions.",
+    "imageLabel": "Lily Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-018/1.webp",
+      "images/products/dresses/UOO-DRE-018/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-DRE-019",
+    "name": "Bud Dress",
+    "category": "Dresses",
+    "fabric": "Silk",
+    "color": "Green",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Elegant with an artistic touch, this silk A-line mini dress is beautifully hand-painted, making every piece truly one of a kind. Crafted from luxurious silk, it offers a graceful drape and effortless comfort. A timeless statement piece for celebrations, soirées, and special occasions.",
+    "imageLabel": "Bud Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-019/1.webp",
+      "images/products/dresses/UOO-DRE-019/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-DRE-020",
+    "name": "Blush Handpainted Dress",
+    "category": "Dresses",
+    "fabric": "Georgette",
+    "color": "Yellow",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Elegant and versatile, this hand-painted georgette dress is designed to make every moment special. Featuring detachable sleeves, it lets you effortlessly switch between two stunning looks. Crafted from lightweight, flowy georgette, each piece is uniquely hand-painted for a timeless, artistic finish.",
+    "imageLabel": "Blush Handpainted Dress",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/dresses/UOO-DRE-020/1.webp"
+    ],
+    "price": 1999.0
+  },
+  {
     "code": "UOO-LEH-001",
-    "name": "Blue Floral Lehenga",
+    "name": "Sky Handpainted Lehenga",
     "category": "Lehengas",
     "fabric": "Organza",
-    "color": "Blue, White",
-    "sizes": "One size",
+    "color": "Sky Blue",
+    "sizes": "Custom Made",
     "availability": "Available",
-    "description": "Blue Floral Lehenga with multiple plates",
-    "imageLabel": "Blue Floral Lehenga",
+    "description": "Embrace timeless elegance with this blue floral handpainted organza lehenga, crafted with exquisite artisanal detail. Delicate floral motifs on airy organza create a graceful and sophisticated look. Lightweight, washable, and perfect for weddings, festive celebrations, and special occasions.",
+    "imageLabel": "Sky Handpainted Lehenga",
     "images": [
       "Product view"
     ],
@@ -70,19 +594,69 @@
       "images/products/lehengas/UOO-LEH-001/2.webp",
       "images/products/lehengas/UOO-LEH-001/3.webp"
     ],
-    "price": 4999.0,
+    "price": 5699.0,
     "sortOrder": 1
   },
   {
+    "code": "UOO-LEH-002",
+    "name": "Pink Tree Handpainted Lehenga",
+    "category": "Lehengas",
+    "fabric": "Organza",
+    "color": "PInk",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Crafted in soft pink organza, this handpainted lehenga is a perfect blend of elegance and artistry. Featuring delicate handcrafted details and a graceful silhouette, it's ideal for festive and wedding occasions. Lightweight, washable, and designed for effortless charm.",
+    "imageLabel": "Pink Tree Handpainted Lehenga",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/lehengas/UOO-LEH-002/1.webp",
+      "images/products/lehengas/UOO-LEH-002/2.webp"
+    ],
+    "price": 5699.0,
+    "sortOrder": 2
+  },
+  {
+    "code": "UOO-LEH-003",
+    "name": "Roses Handpainted Lehenga",
+    "category": "Lehengas",
+    "fabric": "Organza",
+    "color": "Green",
+    "sizes": "Custom Made",
+    "availability": "Available",
+    "description": "Celebrate elegance with this green handpainted organza lehenga, adorned with delicate rose motifs that reflect timeless artistry. Crafted from lightweight organza, it offers a graceful drape and effortless charm. A perfect choice for festive occasions, weddings, and special celebrations.",
+    "imageLabel": "Roses Handpainted Lehenga",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/lehengas/UOO-LEH-003/1.webp",
+      "images/products/lehengas/UOO-LEH-003/2.webp"
+    ],
+    "price": 5699.0,
+    "sortOrder": 3
+  },
+  {
     "code": "UOO-MSH-001",
-    "name": "Brown Handpainted Shirt",
+    "name": "Handpainted Cotton Shirt",
     "category": "Men's Shirts",
     "fabric": "Cotton",
     "color": "Brown",
     "sizes": "S to XL",
     "availability": "Available",
-    "description": "Brown Handpainted Shirt for Men for Summers",
-    "imageLabel": "Brown Handpainted Shirt",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
     "images": [
       "Product view"
     ],
@@ -98,10 +672,664 @@
     "sortOrder": 1
   },
   {
+    "code": "UOO-MSH-002",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Black",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-002/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-003",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "White",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-003/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-004",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Black",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-004/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-005",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Cream",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-005/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-006",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Grey",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-006/1.webp",
+      "images/products/men-s-shirts/UOO-MSH-006/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-007",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "White",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-007/1.webp",
+      "images/products/men-s-shirts/UOO-MSH-007/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-008",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Black",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-008/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-009",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Cream",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-009/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-010",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Cream",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-010/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-011",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "White",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-011/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-012",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "White",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-012/1.webp",
+      "images/products/men-s-shirts/UOO-MSH-012/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-013",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Black",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-013/1.webp",
+      "images/products/men-s-shirts/UOO-MSH-013/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-014",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Black",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-014/1.webp",
+      "images/products/men-s-shirts/UOO-MSH-014/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-015",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "White",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-015/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-016",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Sap Green",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-016/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-017",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Black",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-017/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-018",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Cream",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-018/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-019",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "White",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-019/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-020",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "White",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-020/1.webp",
+      "images/products/men-s-shirts/UOO-MSH-020/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-021",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Grey",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-021/1.webp",
+      "images/products/men-s-shirts/UOO-MSH-021/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-022",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Black",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-022/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-023",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Cream",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-023/1.webp",
+      "images/products/men-s-shirts/UOO-MSH-023/2.webp"
+    ],
+    "price": 999.0
+  },
+  {
+    "code": "UOO-MSH-024",
+    "name": "Handpainted Cotton Shirt",
+    "category": "Men's Shirts",
+    "fabric": "Cotton",
+    "color": "Black",
+    "sizes": "S to XL",
+    "availability": "Available",
+    "description": "Handpainted on premium cotton, each shirt is a wearable piece of art. 🌸 Adorned with timeless floral motifs, sustainably crafted for everyday comfort. Soft, breathable, washable, and made to last—because style should feel as good as it looks. ✨",
+    "imageLabel": "Handpainted Cotton Shirt",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/men-s-shirts/UOO-MSH-024/1.webp"
+    ],
+    "price": 999.0
+  },
+  {
     "code": "UOO-SAR-001",
+    "name": "Yellow Silk Saree",
+    "category": "Sarees",
+    "fabric": "Silk",
+    "color": "Yellow",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Yellow Silk Saree",
+    "imageLabel": "Yellow Silk Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-001/1.webp",
+      "images/products/sarees/UOO-SAR-001/2.webp"
+    ],
+    "price": 5999.0,
+    "sortOrder": 1
+  },
+  {
+    "code": "UOO-SAR-002",
+    "name": "Red Rose Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Red",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Red Rose Saree",
+    "imageLabel": "Red Rose Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-002/1.webp"
+    ],
+    "price": 4999.0
+  },
+  {
+    "code": "UOO-SAR-003",
+    "name": "Floral Georgette Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Pink",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Floral Georgette Saree",
+    "imageLabel": "Floral Georgette Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-003/1.webp"
+    ],
+    "price": 4299.0
+  },
+  {
+    "code": "UOO-SAR-004",
+    "name": "Multi Floral Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Multi",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Multi Floral Saree",
+    "imageLabel": "Multi Floral Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-004/1.webp"
+    ],
+    "price": 4299.0
+  },
+  {
+    "code": "UOO-SAR-005",
+    "name": "White Flower Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Orange",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "White Flower Saree",
+    "imageLabel": "White Flower Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-005/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-006",
     "name": "Yellow Floral Saree",
     "category": "Sarees",
-    "fabric": "Organza",
+    "fabric": "Georgette",
     "color": "Yellow",
     "sizes": "One size",
     "availability": "Available",
@@ -116,22 +1344,458 @@
     ],
     "isNew": false,
     "photos": [
-      "images/products/sarees/UOO-SAR-001/1.webp",
-      "images/products/sarees/UOO-SAR-001/2.webp"
+      "images/products/sarees/UOO-SAR-006/1.webp"
     ],
-    "price": 3999.0,
-    "sortOrder": 1
+    "price": 4299.0
+  },
+  {
+    "code": "UOO-SAR-007",
+    "name": "Orange Floral Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Orange",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Orange Floral Saree",
+    "imageLabel": "Orange Floral Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-007/1.webp"
+    ],
+    "price": 4299.0
+  },
+  {
+    "code": "UOO-SAR-008",
+    "name": "Multi Pink Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Pink",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Multi Pink Saree",
+    "imageLabel": "Multi Pink Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-008/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-009",
+    "name": "Custom Name Saree",
+    "category": "Sarees",
+    "fabric": "Organza",
+    "color": "White",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Custom Name Saree",
+    "imageLabel": "Custom Name Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-009/1.webp"
+    ],
+    "price": 5999.0
+  },
+  {
+    "code": "UOO-SAR-010",
+    "name": "Musturd Floral Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Yellow",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Musturd Floral Saree",
+    "imageLabel": "Musturd Floral Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-010/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-011",
+    "name": "Lilac Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Lilac",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Lilac Saree",
+    "imageLabel": "Lilac Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-011/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-012",
+    "name": "Green Rose Line Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Green",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Green Rose Line Saree",
+    "imageLabel": "Green Rose Line Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-012/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-013",
+    "name": "Lavender Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Lavender",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Lavender Saree",
+    "imageLabel": "Lavender Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-013/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-014",
+    "name": "Pink Rose Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Pink",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Pink Rose Saree",
+    "imageLabel": "Pink Rose Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-014/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-015",
+    "name": "Yellow Organza Saree",
+    "category": "Sarees",
+    "fabric": "Organza",
+    "color": "Yellow",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Yellow Organza Saree",
+    "imageLabel": "Yellow Organza Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-015/1.webp"
+    ],
+    "price": 4199.0
+  },
+  {
+    "code": "UOO-SAR-016",
+    "name": "Blue Rose Saree",
+    "category": "Sarees",
+    "fabric": "Organza",
+    "color": "Pink",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Blue Rose Saree",
+    "imageLabel": "Blue Rose Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-016/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-017",
+    "name": "Evil Eye Saree",
+    "category": "Sarees",
+    "fabric": "Glooming Silk",
+    "color": "Black",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Evil Eye Saree",
+    "imageLabel": "Evil Eye Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-017/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-018",
+    "name": "Grey Rose Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Grey",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Grey Rose Saree",
+    "imageLabel": "Grey Rose Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-018/1.webp"
+    ],
+    "price": 3599.0
+  },
+  {
+    "code": "UOO-SAR-019",
+    "name": "Green Swiss Saree",
+    "category": "Sarees",
+    "fabric": "Georgette",
+    "color": "Green",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Green Swiss Saree",
+    "imageLabel": "Green Swiss Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-019/1.webp"
+    ],
+    "price": 3659.0
+  },
+  {
+    "code": "UOO-SAR-020",
+    "name": "Thai Rose Saree",
+    "category": "Sarees",
+    "fabric": "Organza",
+    "color": "Sky Blue",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Thai Rose Saree",
+    "imageLabel": "Thai Rose Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-020/1.webp"
+    ],
+    "price": 4999.0
+  },
+  {
+    "code": "UOO-SAR-021",
+    "name": "Butter Lotus Saree",
+    "category": "Sarees",
+    "fabric": "Organza",
+    "color": "Butter Yellow",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Butter Lotus Saree",
+    "imageLabel": "Butter Lotus Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-021/1.webp"
+    ],
+    "price": 4599.0
+  },
+  {
+    "code": "UOO-SAR-022",
+    "name": "Koho Saree",
+    "category": "Sarees",
+    "fabric": "Organza",
+    "color": "White",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Koho Saree",
+    "imageLabel": "Koho Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-022/1.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-023",
+    "name": "Lotus Sky Saree",
+    "category": "Sarees",
+    "fabric": "Organza",
+    "color": "Sky Blue",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Lotus Sky Saree",
+    "imageLabel": "Lotus Sky Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-023/1.webp"
+    ],
+    "price": 4599.0
+  },
+  {
+    "code": "UOO-SAR-024",
+    "name": "Tulip Saree",
+    "category": "Sarees",
+    "fabric": "Doria",
+    "color": "Green",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Tulip Saree",
+    "imageLabel": "Tulip Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-024/1.webp",
+      "images/products/sarees/UOO-SAR-024/2.webp"
+    ],
+    "price": 3999.0
+  },
+  {
+    "code": "UOO-SAR-025",
+    "name": "Bali Floral Saree",
+    "category": "Sarees",
+    "fabric": "Organza",
+    "color": "Black",
+    "sizes": "One size",
+    "availability": "Available",
+    "description": "Bali Floral Saree",
+    "imageLabel": "Bali Floral Saree",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/sarees/UOO-SAR-025/1.webp"
+    ],
+    "price": 3999.0
   },
   {
     "code": "UOO-SUI-001",
-    "name": "Floral Work Co-Ord Sets",
+    "name": "",
     "category": "Suits",
-    "fabric": "Silk",
-    "color": "Multi",
+    "fabric": "",
+    "color": "",
     "sizes": "XS to 5XL",
     "availability": "Available",
-    "description": "Floral Work Co-Ord Sets made with hand paint work",
-    "imageLabel": "Floral Work Co-Ord Sets",
+    "description": "",
+    "imageLabel": "",
     "images": [
       "Product view"
     ],
@@ -148,8 +1812,384 @@
       "images/products/suits/UOO-SUI-001/5.webp",
       "images/products/suits/UOO-SUI-001/6.webp"
     ],
-    "price": 2499.0,
     "sortOrder": 1
+  },
+  {
+    "code": "UOO-SUI-002",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-002/1.webp",
+      "images/products/suits/UOO-SUI-002/2.webp",
+      "images/products/suits/UOO-SUI-002/3.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-003",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-003/1.webp",
+      "images/products/suits/UOO-SUI-003/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-004",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-004/1.webp",
+      "images/products/suits/UOO-SUI-004/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-005",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-005/1.webp",
+      "images/products/suits/UOO-SUI-005/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-006",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-006/1.webp",
+      "images/products/suits/UOO-SUI-006/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-007",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-007/1.webp",
+      "images/products/suits/UOO-SUI-007/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-008",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-008/1.webp",
+      "images/products/suits/UOO-SUI-008/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-009",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-009/1.webp",
+      "images/products/suits/UOO-SUI-009/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-010",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-010/1.webp",
+      "images/products/suits/UOO-SUI-010/2.webp",
+      "images/products/suits/UOO-SUI-010/3.webp",
+      "images/products/suits/UOO-SUI-010/4.webp",
+      "images/products/suits/UOO-SUI-010/5.webp",
+      "images/products/suits/UOO-SUI-010/6.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-011",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-011/1.webp",
+      "images/products/suits/UOO-SUI-011/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-012",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-012/1.webp",
+      "images/products/suits/UOO-SUI-012/2.webp",
+      "images/products/suits/UOO-SUI-012/3.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-013",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-013/1.webp",
+      "images/products/suits/UOO-SUI-013/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-014",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-014/1.webp",
+      "images/products/suits/UOO-SUI-014/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-015",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-015/1.webp",
+      "images/products/suits/UOO-SUI-015/2.webp",
+      "images/products/suits/UOO-SUI-015/3.webp",
+      "images/products/suits/UOO-SUI-015/4.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-016",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-016/1.webp",
+      "images/products/suits/UOO-SUI-016/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-SUI-017",
+    "name": "",
+    "category": "Suits",
+    "fabric": "",
+    "color": "",
+    "sizes": "XS to 5XL",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": false,
+    "photos": [
+      "images/products/suits/UOO-SUI-017/1.webp",
+      "images/products/suits/UOO-SUI-017/2.webp",
+      "images/products/suits/UOO-SUI-017/3.webp"
+    ]
   },
   {
     "code": "UOO-WSH-001",
@@ -175,5 +2215,154 @@
     ],
     "price": 999.0,
     "sortOrder": 1
+  },
+  {
+    "code": "UOO-WSH-002",
+    "name": "",
+    "category": "Women's Shirts",
+    "fabric": "",
+    "color": "Multi",
+    "sizes": "S-L",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": true,
+    "photos": [
+      "images/products/women-s-shirts/UOO-WSH-002/1.webp",
+      "images/products/women-s-shirts/UOO-WSH-002/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-WSH-003",
+    "name": "",
+    "category": "Women's Shirts",
+    "fabric": "",
+    "color": "Multi",
+    "sizes": "S-L",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": true,
+    "photos": [
+      "images/products/women-s-shirts/UOO-WSH-003/1.webp",
+      "images/products/women-s-shirts/UOO-WSH-003/2.webp",
+      "images/products/women-s-shirts/UOO-WSH-003/3.webp",
+      "images/products/women-s-shirts/UOO-WSH-003/4.webp",
+      "images/products/women-s-shirts/UOO-WSH-003/5.webp",
+      "images/products/women-s-shirts/UOO-WSH-003/6.webp"
+    ]
+  },
+  {
+    "code": "UOO-WSH-004",
+    "name": "",
+    "category": "Women's Shirts",
+    "fabric": "",
+    "color": "Multi",
+    "sizes": "S-L",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": true,
+    "photos": [
+      "images/products/women-s-shirts/UOO-WSH-004/1.webp",
+      "images/products/women-s-shirts/UOO-WSH-004/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-WSH-005",
+    "name": "",
+    "category": "Women's Shirts",
+    "fabric": "",
+    "color": "Multi",
+    "sizes": "S-L",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": true,
+    "photos": [
+      "images/products/women-s-shirts/UOO-WSH-005/1.webp",
+      "images/products/women-s-shirts/UOO-WSH-005/2.webp",
+      "images/products/women-s-shirts/UOO-WSH-005/3.webp",
+      "images/products/women-s-shirts/UOO-WSH-005/4.webp",
+      "images/products/women-s-shirts/UOO-WSH-005/5.webp",
+      "images/products/women-s-shirts/UOO-WSH-005/6.webp",
+      "images/products/women-s-shirts/UOO-WSH-005/7.webp",
+      "images/products/women-s-shirts/UOO-WSH-005/8.webp"
+    ]
+  },
+  {
+    "code": "UOO-WSH-006",
+    "name": "",
+    "category": "Women's Shirts",
+    "fabric": "",
+    "color": "Multi",
+    "sizes": "S-L",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": true,
+    "photos": [
+      "images/products/women-s-shirts/UOO-WSH-006/1.webp",
+      "images/products/women-s-shirts/UOO-WSH-006/2.webp"
+    ]
+  },
+  {
+    "code": "UOO-WSH-007",
+    "name": "",
+    "category": "Women's Shirts",
+    "fabric": "",
+    "color": "Multi",
+    "sizes": "S-L",
+    "availability": "Available",
+    "description": "",
+    "imageLabel": "",
+    "images": [
+      "Product view"
+    ],
+    "tones": [
+      "#a5543e",
+      "#e7ddd0"
+    ],
+    "isNew": true,
+    "photos": [
+      "images/products/women-s-shirts/UOO-WSH-007/1.webp",
+      "images/products/women-s-shirts/UOO-WSH-007/2.webp",
+      "images/products/women-s-shirts/UOO-WSH-007/3.webp"
+    ]
   }
 ]
