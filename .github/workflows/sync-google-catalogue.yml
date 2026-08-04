@@ -43,4 +43,8 @@ jobs:
           git config user.name "uooam-catalogue-bot"
           git config user.email "uooam-catalogue-bot@users.noreply.github.com"
           git commit -m "Sync catalogue from Google Drive"
+          # Another approved website update may have reached main while this
+          # workflow was downloading images. Rebase before publishing so the
+          # generated catalogue commit is applied on top of the latest main.
+          git pull --rebase origin main
           git push
