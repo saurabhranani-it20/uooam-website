@@ -16,10 +16,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/accessories/UOO-ACC-001/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": true,
+    "homepageBannerRight": false,
     "price": 1499.0,
     "sortOrder": 1
   },
@@ -48,6 +51,9 @@
       "images/products/accessories/UOO-ACC-002/4.webp",
       "images/products/accessories/UOO-ACC-002/5.webp"
     ],
+    "homepageBannerLeft": true,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 699.0,
     "sortOrder": 2
   },
@@ -73,6 +79,9 @@
       "images/products/accessories/UOO-ACC-003/1.webp",
       "images/products/accessories/UOO-ACC-003/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": true,
     "price": 699.0,
     "sortOrder": 3
   },
@@ -97,6 +106,9 @@
     "photos": [
       "images/products/accessories/UOO-ACC-004/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 699.0,
     "sortOrder": 4
   },
@@ -117,10 +129,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/dresses/UOO-DRE-001/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": true,
+    "homepageBannerRight": false,
     "price": 1699.0,
     "sortOrder": 1
   },
@@ -141,11 +156,14 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/dresses/UOO-DRE-002/1.webp",
       "images/products/dresses/UOO-DRE-002/2.webp"
     ],
+    "homepageBannerLeft": true,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2699.0,
     "sortOrder": 2
   },
@@ -166,11 +184,14 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/dresses/UOO-DRE-003/1.webp"
     ],
-    "price": 799.0,
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": true,
+    "price": 1199.0,
     "sortOrder": 3
   },
   {
@@ -190,11 +211,14 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/dresses/UOO-DRE-004/1.webp",
       "images/products/dresses/UOO-DRE-004/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1599.0,
     "sortOrder": 4
   },
@@ -215,10 +239,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/dresses/UOO-DRE-005/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1699.0,
     "sortOrder": 5
   },
@@ -239,10 +266,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/dresses/UOO-DRE-006/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2499.0,
     "sortOrder": 6
   },
@@ -267,6 +297,9 @@
     "photos": [
       "images/products/dresses/UOO-DRE-007/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1399.0,
     "sortOrder": 7
   },
@@ -291,6 +324,9 @@
     "photos": [
       "images/products/dresses/UOO-DRE-008/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1299.0,
     "sortOrder": 8
   },
@@ -311,10 +347,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/dresses/UOO-DRE-009/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1399.0,
     "sortOrder": 9
   },
@@ -339,6 +378,9 @@
     "photos": [
       "images/products/dresses/UOO-DRE-010/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2599.0,
     "sortOrder": 10
   },
@@ -363,6 +405,9 @@
     "photos": [
       "images/products/dresses/UOO-DRE-011/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1599.0,
     "sortOrder": 11
   },
@@ -389,6 +434,9 @@
       "images/products/dresses/UOO-DRE-012/2.webp",
       "images/products/dresses/UOO-DRE-012/3.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2499.0,
     "sortOrder": 12
   },
@@ -413,6 +461,9 @@
     "photos": [
       "images/products/dresses/UOO-DRE-013/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2499.0,
     "sortOrder": 13
   },
@@ -438,6 +489,9 @@
       "images/products/dresses/UOO-DRE-014/1.webp",
       "images/products/dresses/UOO-DRE-014/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1699.0,
     "sortOrder": 14
   },
@@ -463,6 +517,9 @@
       "images/products/dresses/UOO-DRE-015/1.webp",
       "images/products/dresses/UOO-DRE-015/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 15
   },
@@ -488,6 +545,9 @@
       "images/products/dresses/UOO-DRE-016/1.webp",
       "images/products/dresses/UOO-DRE-016/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 16
   },
@@ -513,6 +573,9 @@
       "images/products/dresses/UOO-DRE-017/1.webp",
       "images/products/dresses/UOO-DRE-017/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 17
   },
@@ -538,6 +601,9 @@
       "images/products/dresses/UOO-DRE-018/1.webp",
       "images/products/dresses/UOO-DRE-018/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 18
   },
@@ -563,6 +629,9 @@
       "images/products/dresses/UOO-DRE-019/1.webp",
       "images/products/dresses/UOO-DRE-019/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 19
   },
@@ -587,6 +656,9 @@
     "photos": [
       "images/products/dresses/UOO-DRE-020/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1999.0,
     "sortOrder": 20
   },
@@ -613,6 +685,9 @@
       "images/products/lehengas/UOO-LEH-001/2.webp",
       "images/products/lehengas/UOO-LEH-001/3.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": true,
+    "homepageBannerRight": false,
     "price": 5699.0,
     "sortOrder": 1
   },
@@ -638,6 +713,9 @@
       "images/products/lehengas/UOO-LEH-002/1.webp",
       "images/products/lehengas/UOO-LEH-002/2.webp"
     ],
+    "homepageBannerLeft": true,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 5699.0,
     "sortOrder": 2
   },
@@ -663,6 +741,9 @@
       "images/products/lehengas/UOO-LEH-003/1.webp",
       "images/products/lehengas/UOO-LEH-003/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": true,
     "price": 5699.0,
     "sortOrder": 3
   },
@@ -683,10 +764,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-001/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": true,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 1
   },
@@ -707,10 +791,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-002/1.webp"
     ],
+    "homepageBannerLeft": true,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 2
   },
@@ -731,10 +818,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-003/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": true,
     "price": 999.0,
     "sortOrder": 3
   },
@@ -755,10 +845,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-004/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 4
   },
@@ -783,6 +876,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-005/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 5
   },
@@ -808,6 +904,9 @@
       "images/products/men-s-shirts/UOO-MSH-006/1.webp",
       "images/products/men-s-shirts/UOO-MSH-006/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 6
   },
@@ -833,6 +932,9 @@
       "images/products/men-s-shirts/UOO-MSH-007/1.webp",
       "images/products/men-s-shirts/UOO-MSH-007/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 7
   },
@@ -857,6 +959,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-008/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 8
   },
@@ -881,6 +986,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-009/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 9
   },
@@ -905,6 +1013,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-010/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 10
   },
@@ -929,6 +1040,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-011/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 11
   },
@@ -954,6 +1068,9 @@
       "images/products/men-s-shirts/UOO-MSH-012/1.webp",
       "images/products/men-s-shirts/UOO-MSH-012/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 12
   },
@@ -979,6 +1096,9 @@
       "images/products/men-s-shirts/UOO-MSH-013/1.webp",
       "images/products/men-s-shirts/UOO-MSH-013/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 13
   },
@@ -1004,6 +1124,9 @@
       "images/products/men-s-shirts/UOO-MSH-014/1.webp",
       "images/products/men-s-shirts/UOO-MSH-014/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 14
   },
@@ -1028,6 +1151,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-015/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 15
   },
@@ -1052,6 +1178,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-016/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 16
   },
@@ -1076,6 +1205,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-017/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 17
   },
@@ -1100,6 +1232,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-018/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 18
   },
@@ -1124,6 +1259,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-019/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 19
   },
@@ -1149,6 +1287,9 @@
       "images/products/men-s-shirts/UOO-MSH-020/1.webp",
       "images/products/men-s-shirts/UOO-MSH-020/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 20
   },
@@ -1174,6 +1315,9 @@
       "images/products/men-s-shirts/UOO-MSH-021/1.webp",
       "images/products/men-s-shirts/UOO-MSH-021/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 21
   },
@@ -1198,6 +1342,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-022/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 22
   },
@@ -1223,6 +1370,9 @@
       "images/products/men-s-shirts/UOO-MSH-023/1.webp",
       "images/products/men-s-shirts/UOO-MSH-023/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 23
   },
@@ -1247,6 +1397,9 @@
     "photos": [
       "images/products/men-s-shirts/UOO-MSH-024/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 24
   },
@@ -1272,6 +1425,9 @@
       "images/products/sarees/UOO-SAR-001/1.webp",
       "images/products/sarees/UOO-SAR-001/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": true,
+    "homepageBannerRight": false,
     "price": 5999.0,
     "sortOrder": 1
   },
@@ -1296,6 +1452,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-002/1.webp"
     ],
+    "homepageBannerLeft": true,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4999.0,
     "sortOrder": 2
   },
@@ -1320,6 +1479,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-003/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": true,
     "price": 4299.0,
     "sortOrder": 3
   },
@@ -1344,6 +1506,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-004/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4299.0,
     "sortOrder": 4
   },
@@ -1368,6 +1533,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-005/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 5
   },
@@ -1392,6 +1560,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-006/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4299.0,
     "sortOrder": 6
   },
@@ -1416,6 +1587,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-007/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4299.0,
     "sortOrder": 7
   },
@@ -1436,10 +1610,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/sarees/UOO-SAR-008/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 8
   },
@@ -1460,10 +1637,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/sarees/UOO-SAR-009/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 5999.0,
     "sortOrder": 9
   },
@@ -1484,10 +1664,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/sarees/UOO-SAR-010/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 10
   },
@@ -1512,6 +1695,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-011/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 11
   },
@@ -1532,10 +1718,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/sarees/UOO-SAR-012/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 12
   },
@@ -1560,6 +1749,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-013/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 13
   },
@@ -1584,6 +1776,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-014/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 14
   },
@@ -1608,6 +1803,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-015/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4199.0,
     "sortOrder": 15
   },
@@ -1632,6 +1830,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-016/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 16
   },
@@ -1652,10 +1853,13 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/sarees/UOO-SAR-017/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 17
   },
@@ -1680,6 +1884,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-018/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3599.0,
     "sortOrder": 18
   },
@@ -1704,6 +1911,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-019/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3659.0,
     "sortOrder": 19
   },
@@ -1728,6 +1938,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-020/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4999.0,
     "sortOrder": 20
   },
@@ -1752,6 +1965,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-021/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4599.0,
     "sortOrder": 21
   },
@@ -1776,6 +1992,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-022/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 22
   },
@@ -1800,6 +2019,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-023/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4599.0,
     "sortOrder": 23
   },
@@ -1825,6 +2047,9 @@
       "images/products/sarees/UOO-SAR-024/1.webp",
       "images/products/sarees/UOO-SAR-024/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 24
   },
@@ -1849,6 +2074,9 @@
     "photos": [
       "images/products/sarees/UOO-SAR-025/1.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3999.0,
     "sortOrder": 25
   },
@@ -1875,6 +2103,9 @@
       "images/products/sarees/UOO-SAR-026/2.webp",
       "images/products/sarees/UOO-SAR-026/3.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 4999.0,
     "sortOrder": 26
   },
@@ -1895,7 +2126,7 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/suits/UOO-SUI-001/1.webp",
       "images/products/suits/UOO-SUI-001/2.webp",
@@ -1904,6 +2135,9 @@
       "images/products/suits/UOO-SUI-001/5.webp",
       "images/products/suits/UOO-SUI-001/6.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": true,
+    "homepageBannerRight": false,
     "price": 1999.0,
     "sortOrder": 1
   },
@@ -1924,12 +2158,15 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/suits/UOO-SUI-002/1.webp",
       "images/products/suits/UOO-SUI-002/2.webp",
       "images/products/suits/UOO-SUI-002/3.webp"
     ],
+    "homepageBannerLeft": true,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 3599.0,
     "sortOrder": 2
   },
@@ -1950,11 +2187,14 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/suits/UOO-SUI-003/1.webp",
       "images/products/suits/UOO-SUI-003/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": true,
     "price": 2999.0,
     "sortOrder": 3
   },
@@ -1980,6 +2220,9 @@
       "images/products/suits/UOO-SUI-004/1.webp",
       "images/products/suits/UOO-SUI-004/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 4
   },
@@ -2005,6 +2248,9 @@
       "images/products/suits/UOO-SUI-005/1.webp",
       "images/products/suits/UOO-SUI-005/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 5
   },
@@ -2030,6 +2276,9 @@
       "images/products/suits/UOO-SUI-006/1.webp",
       "images/products/suits/UOO-SUI-006/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 6
   },
@@ -2055,6 +2304,9 @@
       "images/products/suits/UOO-SUI-007/1.webp",
       "images/products/suits/UOO-SUI-007/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 7
   },
@@ -2080,6 +2332,9 @@
       "images/products/suits/UOO-SUI-008/1.webp",
       "images/products/suits/UOO-SUI-008/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 8
   },
@@ -2105,6 +2360,9 @@
       "images/products/suits/UOO-SUI-009/1.webp",
       "images/products/suits/UOO-SUI-009/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 9
   },
@@ -2134,6 +2392,9 @@
       "images/products/suits/UOO-SUI-010/5.webp",
       "images/products/suits/UOO-SUI-010/6.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1999.0,
     "sortOrder": 10
   },
@@ -2159,6 +2420,9 @@
       "images/products/suits/UOO-SUI-011/1.webp",
       "images/products/suits/UOO-SUI-011/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 11
   },
@@ -2185,6 +2449,9 @@
       "images/products/suits/UOO-SUI-012/2.webp",
       "images/products/suits/UOO-SUI-012/3.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 12
   },
@@ -2210,6 +2477,9 @@
       "images/products/suits/UOO-SUI-013/1.webp",
       "images/products/suits/UOO-SUI-013/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 13
   },
@@ -2235,6 +2505,9 @@
       "images/products/suits/UOO-SUI-014/1.webp",
       "images/products/suits/UOO-SUI-014/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 2999.0,
     "sortOrder": 14
   },
@@ -2262,6 +2535,9 @@
       "images/products/suits/UOO-SUI-015/3.webp",
       "images/products/suits/UOO-SUI-015/4.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1999.0,
     "sortOrder": 15
   },
@@ -2287,6 +2563,9 @@
       "images/products/suits/UOO-SUI-016/1.webp",
       "images/products/suits/UOO-SUI-016/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 899.0,
     "sortOrder": 16
   },
@@ -2313,6 +2592,9 @@
       "images/products/suits/UOO-SUI-017/2.webp",
       "images/products/suits/UOO-SUI-017/3.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 1399.0,
     "sortOrder": 17
   },
@@ -2333,11 +2615,14 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/women-s-shirts/UOO-WSH-001/1.webp",
       "images/products/women-s-shirts/UOO-WSH-001/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": true,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 1
   },
@@ -2358,11 +2643,14 @@
       "#a5543e",
       "#e7ddd0"
     ],
-    "isNew": false,
+    "isNew": true,
     "photos": [
       "images/products/women-s-shirts/UOO-WSH-002/1.webp",
       "images/products/women-s-shirts/UOO-WSH-002/2.webp"
     ],
+    "homepageBannerLeft": true,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 899.0,
     "sortOrder": 2
   },
@@ -2392,6 +2680,9 @@
       "images/products/women-s-shirts/UOO-WSH-003/5.webp",
       "images/products/women-s-shirts/UOO-WSH-003/6.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": true,
     "price": 899.0,
     "sortOrder": 3
   },
@@ -2417,6 +2708,9 @@
       "images/products/women-s-shirts/UOO-WSH-004/1.webp",
       "images/products/women-s-shirts/UOO-WSH-004/2.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 4
   },
@@ -2448,6 +2742,9 @@
       "images/products/women-s-shirts/UOO-WSH-005/7.webp",
       "images/products/women-s-shirts/UOO-WSH-005/8.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 5
   },
@@ -2476,6 +2773,9 @@
       "images/products/women-s-shirts/UOO-WSH-006/4.webp",
       "images/products/women-s-shirts/UOO-WSH-006/5.webp"
     ],
+    "homepageBannerLeft": false,
+    "homepageBannerCentre": false,
+    "homepageBannerRight": false,
     "price": 999.0,
     "sortOrder": 6
   }
