@@ -1,119 +1,76 @@
 const WHATSAPP_NUMBER = "918619512140";
-let products = [];
-let categories = [];
+const instagramUrl = "https://www.instagram.com/uooambyurvashiranani/";
 const $ = (selector) => document.querySelector(selector);
-const $$ = (selector) => document.querySelectorAll(selector);
-const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const slugify = (text) => String(text).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const categorySlug = (text) => String(text).toLowerCase().replace(/[’']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const whatsappUrl = () => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello, I would like to know more about the UOOAM collection.")}`;
+const announcement = $(".announcement");
+if (announcement) announcement.textContent = "Hand-painted artisan apparel · Worldwide shipping";
 
-function productUrl(product) {
-  return new URL(`product.html?product=${slugify(product.name)}`, location.href).href;
-}
-function whatsappUrl(product) {
-  const message = product
-    ? `Hello,\n\nI am interested in this product.\n\nProduct: ${product.name}\nProduct Link: ${productUrl(product)}\n\nCould you please share the price and availability?`
-    : "Hello, I would like to know more about the UOOAM collection.";
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-}
-
-function availabilityBadge(product) {
-  const label = (product.availability || "").trim();
-  return label ? `<span class="availability-badge availability-${slugify(label)}">${label}</span>` : "";
+function setupMenu() {
+  const toggle = $(".menu-toggle"), menu = $(".site-menu"), overlay = $(".menu-overlay"), close = $(".menu-close");
+  if (!toggle || !menu) return;
+  const setOpen = (open) => { document.body.classList.toggle("menu-open", open); toggle.setAttribute("aria-expanded", open); menu.setAttribute("aria-hidden", !open); };
+  toggle.addEventListener("click", () => setOpen(!document.body.classList.contains("menu-open")));
+  [close, overlay].forEach((item) => item?.addEventListener("click", () => setOpen(false)));
+  menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
 }
 
-function card(product, index) {
-  const url = `product.html?product=${slugify(product.name)}`;
-  const img = product.photos && product.photos[0]
-    ? `<div class="product-photo"><img src="${product.photos[0]}" alt="${product.name}" loading="lazy" /></div>`
-    : `<div class="product-image" style="--tone1:${product.tones[0]};--tone2:${product.tones[1]}"><i>${product.category}</i><span>${product.imageLabel}</span></div>`;
-  const price = product.price ? `<p class="product-price">₹${Number(product.price).toLocaleString("en-IN")}</p>` : `<p class="product-price">Price on request</p>`;
-  return `<article class="product-card" style="animation-delay:${Math.min(index * 35, 350)}ms"><a class="product-link" href="${url}" aria-label="View ${product.name}">${img}${availabilityBadge(product)}<div class="product-meta"><h3>${product.name}</h3>${price}</div></a></article>`;
+function categoryCard(cat) {
+  return `<a class="category-card" href="category.html?category=${categorySlug(cat.name)}"><div class="category-photo"><img src="${cat.coverImage}" alt="${cat.name}" loading="lazy" /><h3>${cat.name}</h3></div></a>`;
 }
 
-function resolveCategoryCoverImage(cat) {
-  const name = (cat.name || "").trim().toLowerCase();
-  const imageName = {
-    sarees: "sarees",
-    suits: "suits",
-    lehengas: "lehengas",
-    dresses: "dresses",
-    "women's shirts": "womens-shirts",
-    "women’s shirts": "womens-shirts",
-    "men's shirts": "mens-shirts",
-    "men’s shirts": "mens-shirts",
-    accessories: "accessories",
-  }[name] || slugify(cat.name);
-
-  const candidates = [];
-  if (cat.coverImage) candidates.push(cat.coverImage);
-
-  ["images/categories"].forEach((folder) => {
-    [".webp", ".png", ".jpg", ".jpeg"].forEach((extension) => {
-      candidates.push(`${folder}/${imageName}${extension}`);
-    });
-  });
-
-  return candidates.find(Boolean) || "";
-}
-
-function categoryCard(cat, count, index) {
-  const url = `category.html?category=${categorySlug(cat.name)}`;
-  const coverImage = resolveCategoryCoverImage(cat);
-  const cover = coverImage
-    ? `<div class="category-photo"><img src="${coverImage}" alt="${cat.name} category" loading="lazy" /></div>`
-    : `<div class="category-art" style="--tone1:${cat.tone || "#a5543e"};--tone2:${cat.tone2 || "#e7ddd0"}"><span>${cat.name}</span></div>`;
-  return `<a class="category-card" href="${url}" style="animation-delay:${Math.min(index * 45, 300)}ms" aria-label="Browse ${cat.name}">${cover}<div class="category-meta"><h3>${cat.name}</h3><p>${count} piece${count === 1 ? "" : "s"}</p><span class="category-tagline">${cat.tagline || ""}</span></div></a>`;
-}
-
-function renderCategories() {
-  const grid = $("#category-grid");
-  if (!grid) return;
-  const sorted = [...categories].sort((a, b) => (a.order || 0) - (b.order || 0));
-  grid.innerHTML = sorted
-    .map((cat, i) => {
-      const count = products.filter((p) => p.category === cat.name).length;
-      return categoryCard(cat, count, i);
-    })
-    .join("");
-
-  const heroPhoto = $("#hero-photo");
-  const heroCategory = sorted.find((cat) => slugify(cat.name) === "sarees") || sorted[0];
-  if (heroPhoto && heroCategory) {
-    heroPhoto.src = resolveCategoryCoverImage(heroCategory);
-    heroPhoto.alt = `UOOAM ${heroCategory.name} collection`;
-    heroPhoto.hidden = false;
-  }
-}
-
-function renderNewArrivals() {
-  const section = $("#new-arrivals");
-  const grid = $("#new-arrivals-grid");
-  if (!section || !grid) return;
-  const newArrivals = products
-    .filter((p) => p.isNew)
-    .sort((a, b) => (a.sortOrder ?? Number.POSITIVE_INFINITY) - (b.sortOrder ?? Number.POSITIVE_INFINITY) || a.code.localeCompare(b.code));
-  if (newArrivals.length === 0) {
-    section.hidden = true;
-    return;
-  }
-  section.hidden = false;
-  grid.innerHTML = newArrivals.map((p, i) => card(p, i)).join("");
+function renderSlides(categories, products) {
+  const slides = $("#hero-slides"), dots = $("#slide-dots");
+  if (!slides || !categories.length) return;
+  slides.innerHTML = categories.map((cat, index) => {
+    const categoryProducts = products.filter((p) => p.category === cat.name && p.photos?.[0]);
+    const orderedProducts = [...categoryProducts].sort((a, b) => (a.sortOrder ?? Number.MAX_SAFE_INTEGER) - (b.sortOrder ?? Number.MAX_SAFE_INTEGER) || a.code.localeCompare(b.code));
+    const positioned = {
+      left: categoryProducts.find((p) => p.homepageBannerLeft),
+      centre: categoryProducts.find((p) => p.homepageBannerCentre),
+      right: categoryProducts.find((p) => p.homepageBannerRight),
+    };
+    const bannerProducts = positioned.left && positioned.centre && positioned.right
+      ? [positioned.left, positioned.centre, positioned.right]
+      : [orderedProducts[0], orderedProducts[1] || orderedProducts[0], orderedProducts[2] || orderedProducts[0]];
+    const leftPhoto = bannerProducts[0]?.photos[0] || cat.coverImage;
+    const centrePhoto = bannerProducts[1]?.photos[0] || cat.coverImage;
+    const rightPhoto = bannerProducts[2]?.photos[0] || cat.coverImage;
+    return `<article class="hero-slide ${index === 0 ? "is-active" : ""}" data-category-url="category.html?category=${categorySlug(cat.name)}" style="--hero-image:url('${centrePhoto}')"><img class="slide-product left" src="${leftPhoto}" alt="" /><div class="slide-copy"><p>HAND-PAINTED ARTISAN APPAREL</p><h2>${cat.name}</h2><span>${cat.tagline || "Timeless art. Handcrafted elegance."}</span><a href="category.html?category=${categorySlug(cat.name)}">Explore collection</a></div><img class="slide-product right" src="${rightPhoto}" alt="" /></article>`;
+  }).join("");
+  dots.innerHTML = categories.map((cat, index) => `<button class="${index === 0 ? "is-active" : ""}" aria-label="Show ${cat.name}"></button>`).join("");
+  let current = 0;
+  const show = (next) => { current = (next + categories.length) % categories.length; slides.querySelectorAll(".hero-slide").forEach((slide, i) => slide.classList.toggle("is-active", i === current)); dots.querySelectorAll("button").forEach((dot, i) => dot.classList.toggle("is-active", i === current)); };
+  $(".slide-arrow.previous")?.addEventListener("click", () => show(current - 1));
+  $(".slide-arrow.next")?.addEventListener("click", () => show(current + 1));
+  dots.querySelectorAll("button").forEach((dot, i) => dot.addEventListener("click", () => show(i)));
+  slides.querySelectorAll(".hero-slide").forEach((slide) => slide.addEventListener("click", (event) => {
+    if (!event.target.closest("a, button")) location.href = slide.dataset.categoryUrl;
+  }));
+  let touchStartX = 0;
+  let touchStartY = 0;
+  slides.addEventListener("touchstart", (event) => {
+    touchStartX = event.changedTouches[0].screenX;
+    touchStartY = event.changedTouches[0].screenY;
+  }, { passive: true });
+  slides.addEventListener("touchend", (event) => {
+    const deltaX = event.changedTouches[0].screenX - touchStartX;
+    const deltaY = event.changedTouches[0].screenY - touchStartY;
+    if (Math.abs(deltaX) > 45 && Math.abs(deltaX) > Math.abs(deltaY)) show(current + (deltaX < 0 ? 1 : -1));
+  }, { passive: true });
+  setInterval(() => show(current + 1), 6000);
 }
 
 async function start() {
-  const [productsRes, categoriesRes] = await Promise.all([
-    fetch(`data/products.json?updated=${Date.now()}`, { cache: "no-store" }),
-    fetch("data/categories.json"),
-  ]);
-  products = await productsRes.json();
-  categories = await categoriesRes.json();
-  renderCategories();
-  renderNewArrivals();
-  $$("[data-whatsapp-general]").forEach((a) => (a.href = whatsappUrl()));
+  const [productsResponse, categoriesResponse] = await Promise.all([fetch("data/products.json"), fetch("data/categories.json")]);
+  const [products, categories] = await Promise.all([productsResponse.json(), categoriesResponse.json()]);
+  const ordered = categories.sort((a, b) => a.order - b.order);
+  $("#category-grid").innerHTML = ordered.map((category) => categoryCard(category)).join("");
+  renderSlides(ordered, products);
+  document.querySelectorAll("[data-whatsapp-general]").forEach((link) => link.href = whatsappUrl());
+  document.querySelectorAll(".whatsapp-icon").forEach((link) => link.innerHTML = '<img src="images/brand/whatsapp-logo.webp" alt="" />');
 }
-
 $("#year").textContent = new Date().getFullYear();
-start().catch(() => {
-  const grid = $("#category-grid");
-  if (grid) grid.innerHTML = "<p>We could not load the collection. Please refresh the page.</p>";
-});
+setupMenu();
+start().catch(() => { $("#category-grid").textContent = "We could not load the collection. Please refresh the page."; });

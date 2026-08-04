@@ -37,7 +37,7 @@ Website/
 
 ### Sheet layout
 
-Use one tab per category. The required columns are `Product Code`, `Category`, and `Product Name`; the script also reads `Fabric`, `Colour`, `Sizes`, `Availability`, `Description` (or `Notes`), `Price`, `New`, `Publish`, and `Sort Order` when available. `New` accepts `yes`, `true`, or `1`. Set `Publish` to `No` or `False` to keep a product off the public website; blank/Yes/True keeps it visible. Sort Order `1`, `2`, `3` controls the displayed order within a category. The old `Photo Group` column is no longer used.
+Use one tab per category. The required columns are `Product Code`, `Category`, and `Product Name`; the script also reads `Fabric`, `Colour`, `Sizes`, `Availability`, `Description` (or `Notes`), `Price`, `New`, `Publish`, `Sort Order`, and `Position` when available. Use `Left`, `Center`, or `Right` in `Position` to choose the three product images displayed in that category's homepage banner. `New` accepts `yes`, `true`, or `1`. Set `Publish` to `No` or `False` to keep a product off the public website; blank/Yes/True keeps it visible. Sort Order `1`, `2`, `3` controls the displayed order within a category. The old `Photo Group` column is no longer used.
 
 ### One-time setup
 

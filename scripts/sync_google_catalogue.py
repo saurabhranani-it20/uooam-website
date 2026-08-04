@@ -300,6 +300,7 @@ def main():
                 local_photos.append(local.relative_to(ROOT).as_posix())
         name = str(value(row, "Product Name", "Name")).strip()
         notes = str(value(row, "Description", "Notes")).strip()
+        homepage_position = str(value(row, "Position", "Homepage Position", "Hero Position")).strip().lower()
         product = {
             "code": code,
             "name": name,
@@ -314,6 +315,9 @@ def main():
             "tones": ["#a5543e", "#e7ddd0"],
             "isNew": truthy(value(row, "New", "Is New", "New Arrival")),
             "photos": local_photos,
+            "homepageBannerLeft": homepage_position == "left",
+            "homepageBannerCentre": homepage_position in {"center", "centre"},
+            "homepageBannerRight": homepage_position == "right",
         }
         price = value(row, "Price", "MRP")
         if price:

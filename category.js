@@ -78,7 +78,7 @@ async function start() {
   categories = await categoriesResponse.json();
   const isNewArrivals = collectionName === "new-arrivals";
   const categoryProducts = isNewArrivals ? products.filter((p) => p.isNew) : products.filter((p) => categorySlug(p.category) === categorySlug(categoryName));
-  if (categoryProducts.length === 0) {
+  if (categoryProducts.length === 0 && !isNewArrivals) {
     location.href = "index.html#collection";
     return;
   }
@@ -88,16 +88,10 @@ async function start() {
   const canonicalQuery = isNewArrivals ? "collection=new-arrivals" : `category=${categorySlug(displayCategory)}`;
   document.querySelector('link[rel="canonical"]')?.setAttribute("href", new URL(`category.html?${canonicalQuery}`, location.href).href);
   document.querySelector("meta[name=description]").content = `Explore our ${displayCategory} collection at UOOAM. Enquire directly on WhatsApp.`;
-  const category = categories.find((item) => categorySlug(item.name) === categorySlug(displayCategory));
-  const coverImage = isNewArrivals ? "" : category?.coverImage || getCategoryCoverImage(displayCategory);
-  const categoryHero = coverImage
-    ? `<div class="category-hero-photo"><img src="${coverImage}" alt="${displayCategory} collection" loading="eager" /></div>`
-    : "";
   $("#category-view").innerHTML = `
     <div class="category-hero">
-      ${categoryHero}
       <div class="category-header">
-        <p class="eyebrow">THE COLLECTION</p>
+        <p class="eyebrow">HAND-PAINTED ARTISAN APPAREL</p>
         <h1>${displayCategory}</h1>
       </div>
     </div>
@@ -106,7 +100,7 @@ async function start() {
     </div>
     <p id="cat-count" class="product-count" aria-live="polite"></p>
     <div class="product-grid" id="cat-grid"></div>
-    <p class="empty-state" id="cat-empty" hidden>No pieces are available in this collection right now.</p>
+    <p class="empty-state" id="cat-empty" hidden>New pieces are being prepared for the collection. Please check back soon.</p>
   `;
   $("#cat-sort").addEventListener("change", render);
   document.querySelectorAll("[data-whatsapp-general]").forEach((a) => (a.href = whatsappUrl()));

@@ -1,28 +1,16 @@
 const WHATSAPP_NUMBER = "918619512140";
-const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const slugify = (text) => String(text).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const query = new URLSearchParams(location.search).get("product");
 const productUrl = (p) => new URL(`product.html?product=${slugify(p.name)}`, location.href).href;
-const messageUrl = (p) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hello,\n\nI am interested in this product.\n\nProduct: ${p.name}\nProduct Link: ${productUrl(p)}\n\nCould you please share the price and availability?`)}`;
+const messageUrl = (p) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hello, I am interested in this UOOAM piece.\n\nProduct: ${p.name}\nProduct code: ${p.code}\nProduct link: ${productUrl(p)}\n\nCould you please share availability and sizing guidance?`)}`;
+const productCard = (p) => `<article class="product-card"><a class="product-link" href="product.html?product=${slugify(p.name)}"><div class="product-photo"><img src="${p.photos?.[0]}" alt="${p.name}" loading="lazy" /></div><div class="product-meta"><h3>${p.name}</h3><p class="product-price">₹${Number(p.price).toLocaleString("en-IN")}</p></div></a></article>`;
 
-fetch(`data/products.json?updated=${Date.now()}`, { cache: "no-store" })
-  .then((r) => r.json())
-  .then((products) => {
-    const p = products.find((item) => slugify(item.name) === query);
-    if (!p) { location.href = "index.html#collection"; return; }
-    document.title = `${p.name} | UOOAM`;
-    document.querySelector('link[rel="canonical"]')?.setAttribute("href", productUrl(p));
-    document.querySelector("meta[name=description]").content = `${p.name}, ${p.color} ${p.fabric}. Enquire with UOOAM on WhatsApp.`;
-    document.querySelector("#header-chat").href = messageUrl(p);
-    const availability = (p.availability || "").trim();
-    const gallery = p.photos?.length
-      ? p.photos.map((src, i) => `<div class="detail-photo image-${i}"><img src="${src}" alt="${p.name} — view ${i + 1}" loading="lazy" /></div>`).join("")
-      : p.images.map((label, i) => `<div class="detail-image image-${i}" style="--tone1:${p.tones[i % 2]};--tone2:${p.tones[(i + 1) % 2]}"><span>${label}</span></div>`).join("");
-    const price = p.price ? `₹${Number(p.price).toLocaleString("en-IN")}` : "Price on request";
-    document.querySelector("#product-detail").innerHTML = `<section class="product-detail"><div class="detail-gallery">${gallery}</div><div class="detail-copy"><p class="eyebrow">${p.category}</p><h1>${p.name}</h1><p class="detail-price">${price}</p><p class="detail-description">${p.description}</p><dl><div><dt>Fabric</dt><dd>${p.fabric}</dd></div><div><dt>Colour</dt><dd>${p.color}</dd></div><div><dt>${p.sizes === "One size" ? "Size" : "Sizes"}</dt><dd>${p.sizes}</dd></div><div><dt>Availability</dt><dd>${p.availability}</dd></div></dl><a class="button button-dark order-button" href="${messageUrl(p)}" target="_blank" rel="noreferrer">Enquire on WhatsApp <span>↗</span></a><p class="order-note">We’ll confirm availability and styling guidance directly on WhatsApp.</p></div></section>`;
-    if (availability) {
-      document.querySelector(".detail-copy h1")?.insertAdjacentHTML("beforebegin", `<span class="availability-badge detail-availability availability-${slugify(availability)}">${availability}</span>`);
-    }
-  })
-  .catch(() => { document.querySelector("#product-detail").textContent = "This product could not be loaded. Please return to the collection."; });
-
-document.querySelector("#year").textContent = new Date().getFullYear();
+fetch("data/products.json").then((r) => r.json()).then((products) => {
+  const p = products.find((item) => slugify(item.name) === query); if (!p) { location.href = "index.html#collection"; return; }
+  document.title = `${p.name} | UOOAM`; document.querySelector("#header-chat").href = messageUrl(p);
+  const photos = p.photos?.length ? p.photos : [];
+  document.querySelector("#product-detail").innerHTML = `<section class="product-detail"><div class="gallery-carousel"><button class="gallery-button gallery-prev" aria-label="Previous image">←</button><button class="gallery-button gallery-next" aria-label="Next image">→</button><button class="gallery-image-button" aria-label="Open image"><img id="gallery-main-image" src="${photos[0]}" alt="${p.name} — view 1" /></button><p class="gallery-counter"><span id="gallery-index">1</span> / ${photos.length}</p></div><div class="detail-copy"><p class="eyebrow">${p.category}</p><h1>${p.name}</h1><p class="detail-price">₹${Number(p.price).toLocaleString("en-IN")}</p><p class="detail-description">${p.description}</p><dl><div><dt>Product code</dt><dd>${p.code}</dd></div><div><dt>Fabric</dt><dd>${p.fabric}</dd></div><div><dt>Colour</dt><dd>${p.color}</dd></div><div><dt>Size</dt><dd>${p.sizes}</dd></div><div><dt>Availability</dt><dd>${p.availability}</dd></div></dl><a class="button button-dark order-button" href="${messageUrl(p)}" target="_blank" rel="noreferrer">Enquire on WhatsApp ↗</a><p class="order-note">For sizing or a personal styling consultation, we are only a message away.</p></div></section><section class="related-products"><p class="eyebrow">YOU MAY ALSO LIKE</p><h2>More from <em>${p.category}</em></h2><div class="product-grid">${products.filter((item) => item.category === p.category && item.code !== p.code).slice(0, 4).map(productCard).join("") || "<p>More pieces from this collection are coming soon.</p>"}</div></section><dialog class="image-lightbox"><button class="lightbox-close" aria-label="Close image">×</button><img src="${photos[0]}" alt="${p.name}" /></dialog>`;
+  let current = 0; const image = document.querySelector("#gallery-main-image"), count = document.querySelector("#gallery-index"), lightbox = document.querySelector(".image-lightbox");
+  const show = (index) => { current = (index + photos.length) % photos.length; image.src = photos[current]; image.alt = `${p.name} — view ${current + 1}`; count.textContent = current + 1; lightbox.querySelector("img").src = photos[current]; };
+  document.querySelector(".gallery-prev").addEventListener("click", () => show(current - 1)); document.querySelector(".gallery-next").addEventListener("click", () => show(current + 1)); document.querySelector(".gallery-image-button").addEventListener("click", () => lightbox.showModal()); document.querySelector(".lightbox-close").addEventListener("click", () => lightbox.close());
+}).catch(() => document.querySelector("#product-detail").textContent = "This product could not be loaded.");
